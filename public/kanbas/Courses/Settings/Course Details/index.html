@@ -1,3 +1,18 @@
+<table>
+    <thead></thead>
+    <tbody>
+        <tr>
+            <td><a href='/Kanbas/Courses/Settings/Course Details/screen.html'>Course Details</a></td>
+            <td><a href='/Kanbas/Courses/Settings/Sections/screen.html'>Sections</a></td>
+            <td><a href='/Kanbas/Courses/Settings/Navigation/screen.html'>Navigation</a></td>
+            <td><a href='/Kanbas/Courses/Settings/Apps/screen.html'>Apps</a></td>
+            <td><a href='/Kanbas/Courses/Settings/Feature Options/screen.html'>Feature Options</a></td>
+            <td><a href='/Kanbas/Courses/Settings/Integrations/screen.html'>Integrations</a></td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+
 <h2>Course Details</h2>
 
 <table>
@@ -23,7 +38,10 @@
         </tr>
         <tr>
             <td><b>Course Templace:</b></td>
-            <td><input type="checkbox">Enable course as a Course Template</td>
+            <td>
+                <input id="wd-enable-as-course-template" type="checkbox">
+                <label for="wd-enable-as-course-template">Enable course as a Course Template</label>
+            </td>
         </tr>
         <tr>
             <td><b>Time Zone:</b></td>
@@ -60,8 +78,13 @@
             <input type="date"/>
             <h3>End</h3>
             <input type="date"/>
-            <p><input type="checkbox">Restrict students from viewing course before term start date</p>
-            <p><input type="checkbox">Restrict students from viewing course after term end date</p>
+            <p><input id="wd-restrict-before" type="checkbox">
+                <label for="wd-restrict-before">Restrict students from viewing course before term start date</label>
+            </p>
+            <p>
+                <input id="wd-restrict-after" type="checkbox">
+                <label for="wd-restrict-after">Restrict students from viewing course after term end date</label>
+            </p>
         </td>
         </tr>
         <tr>
@@ -94,39 +117,71 @@
         </tr>
         <tr>
             <td valign="top"><b>Large Course:</b></td>
-            <td><input type="checkbox">Launch SpeedGrader Filtered by Student Group</td>
+            <td>
+                <input type="checkbox" id="wd-speedgrader-filtered">
+                <label for="wd-speedgrader-filtered">Launch SpeedGrader Filtered by Student Group</label>
+            </td>
         </tr>
         <tr>
             <td valign="top"><b>Grading Scheme:</b></td>
-            <td><input type="checkbox">Enable course grading scheme</td>
+            <td>
+                <input id="wd-course-grading-enable" type="checkbox">
+                <label for="wd-course-grading-enable">Enable course grading scheme</label>
+            </td>
         </tr>
         <tr>
-            <td valign="top"><b>AND</b></td>
-            <td>AND4</td>
+            <td valign="top"><b>License:</b></td>
+            <td><select>
+                <option>Open</option>
+                <option selected>Private (Copyrighted)</option>
+                <option>Stolen</option>
+            </select></td>
         </tr>
         <tr>
-            <td valign="top"><b>AND</b></td>
-            <td>AND5</td>
+            <td valign="top"><b>File Copyright:</b></td>
+            <td>
+                <input id="wd-provide-copyright-info" type="checkbox">
+                <label for="wd-provide-copyright-info">Copyright and license information must be provided for files before they are published.</label>
+            </td>
         </tr>
         <tr>
-            <td valign="top"><b>AND</b></td>
-            <td>AND6</td>
+            <td valign="top"><b>Visibility:</b></td>
+            <td>
+                If you need to make your course public, please contact your administrator/support
+            </br>
+                <select disabled>
+                    <option>Course</option>
+                    <option>Some other option which would necessitate a long bar</option>
+                </select>
+            </br>
+            <input id="wd-include-in-public-index" type="checkbox">
+            <label for="wd-include-in-public-index">Include this course in the public course index</label>
+            </td>
         </tr>
         <tr>
-            <td valign="top"><b>AND</b></td>
-            <td>AN7D</td>
+            <td valign="top"><b>Format:</b></td>
+            <td>
+                <select>
+                    <option>On-Campus</option>
+                    <option>Off-Campus</option>
+                    <option>Under-Campus</option>
+                    <option>Above-Campus</option>
+                </select>
+            </td>
         </tr>
         <tr>
-            <td valign="top"><b>AND</b></td>
-            <td>AND8</td>
+            <td valign="top"><b>Mastery Paths:</b></td>
+            <td>
+                <input id="wd-enable-iep" type="checkbox">
+                <label for="wd-enable-iep">Enable individual learning paths for students based on assessment</label>
+            </td>
         </tr>
         <tr>
-            <td valign="top"d><b>AND1</b></td>
-            <td>AND9</td>
-        </tr>
-        <tr>
-            <td valign="top"><b>AND</b></td>
-            <td>AND11</td>
+            <td><b>Description:</b></td>
+            <td>
+                <textarea cols="60" rows="6"
+                tooltip="Describe your course here!"></textarea>
+            </td>
         </tr>
         <tr>
             <td valign="top"><a href="#">more options</a></td>
