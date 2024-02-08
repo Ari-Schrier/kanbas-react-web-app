@@ -14,3 +14,8 @@ body * {
 .wd-main-content {
     width:100%;
 }
+
+.breadcrumb a {
+    color: #dc3545;
+    text-decoration: none;
+  }

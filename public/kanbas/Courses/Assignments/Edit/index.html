@@ -1,95 +1,108 @@
-<select><option>SpeedGrader</option></select>
-<br>
-<hr>
-<h2>Assignment Name</h2>
+<html>
+    <head>
+        <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Edit/index.css" />
+      </head>
+      <body>
+        <div class="row">
+            <div class="col-12"> <span class="float-end text-success">Published <i class="fa fa-check-circle"></i> <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"></i> </button></span></div>
+        </div>
+            <div > <hr> </div>
 
-<p>
-<input value="A1 - ENV + HTML"></input>
-</p>
+            <div >
+                <label for="wd-assignment-name">Assignment Name: </label>
+                <input class="form-control" id="wd-assignment-name" value="A1 - ENV + HTML">
+            </div>
 
-<p>
-<textarea cols="20" rows="2"
-         placeholder="This is the Assignment Description"
-         title="tooltip">This is the Assignment Description
-</textarea>
-</p>
+            <div >
+                <textarea class="form-control" id="wd-courseDescription" rows="5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</textarea>
+            </div>
+        </div>
 
-<p>
-    Points<br>
-    <input value="100"></input>
-</p>
+            <div class="row">
+                <div class="col-4"> <label for="wd-points" class="float-end">Points: </label></div>
+                <div class="col-8"><input type="number" class="form-control" id="wd-points" max="100" min="0" value="100"></div>
+            </div>
+            <div class="row">
+                <div class="col-4"> <label for="wd-assignment-group" class="float-end">Assignment Group: </label></div>
+                <div class="col-8">
+                    <select class="form-control" id="wd-assignment-group">
+                        <option>ASSIGNMENTS</option>
+                        <option>TESTS</option>
+                        <option>QUIZZES</option>
+                        <option>EVIL ASSIGNMENTS</option>
+                        <option>WICKED, NASTY QUIZZES</option>
+                      </select>
+                      </div>
+            </div>
 
-<p>
-    Assignment Group<br>
-    <select>
-        <option>ASSIGNMENTS</option>
-        <option>QUIZZES</option>
-        <option>EXAM</option>
-        <option>PROJECT</option>
-    </select>
-</p>
+            <div class="row">
+                <div class="col-4"> <label for="wd-displayas" class="float-end">Display As: </label></div>
+                <div class="col-8">
+                    <select class="form-control" id="wd-displayas">
+                        <option>Percentage</option>
+                        <option>Total</option>
+                        <option>Interprative Dance</option>
+                      </select>
+                      </div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-8">
+                        <input class="form-check-input" type="checkbox" value="" id="wd-countstowardfinal">
+                        <label class="form-check-label" for="wd-countstowardfinal">
+                          Do not count this assignment toward the final grade
+                        </label>
+                </div>
+            </div>
 
-<p>
-    Display Grade As<br>
-    <select>
-        <option selected>Percentage</option>
-        <option>Musical Notation</option>
-        <option>Interprative Dance</option>
-    </select>
-</p>
+            <div class="row">
 
-<p>
-    Submission Type<br>
-    <select>
-        <option selected>Online</option>
-        <option>Offline</option>
-        <option>Some Secret Third Thing</option>
-    </select>
-</p>
+                <div class="col-4"><span class="float-end">Assign:</span></div>
+                <div class="col-8 border">
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="wd-assign-to">Assign To:</label>
+                            <select class="form-control" id="wd-assign-to">
+                                <option>Everyone</option>
+                                <option>No-One</option>
+                                <option>Tony Hawk</option>
+                                <option>My Cat</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label for="wd-duedate">Due:</label>
+                            <input class="form-control" id="wd-duedate" type="date" value="2112-12-21"></input>
+                        </div>
 
-<p>
-    Online Entry Options<br>
-    <input type="checkbox" name="wd-checkentryoption" id="wd-textentry"></input>
-    <label for="wd-textentry">Text Entry</label>
-    <br>
-    <input type="checkbox" name="wd-checkentryoption" id="wd-website-url"></input>
-    <label for="wd-website-url">Website URL</label>
-    <br>
-    <input type="checkbox" name="wd-checkentryoption" id="wd-media-recordings"></input>
-    <label for="wd-media-recordings">Media Recordings</label>
-    <br>
-    <input type="checkbox" name="wd-checkentryoption" id="wd-student-annotations"></input>
-    <label for="wd-student-annotations">Student Annotations</label>
-    <br>
-    <input type="checkbox" name="wd-checkentryoption" id="wd-file-uploads"></input>
-    <label for="wd-file-uploads">File Upload</label>
-</p>
+                        <div class="col-6">
+                            <label for="wd-startdate">Available From:</label>
+                            <input class="form-control" id="wd-startdate" type="date" value="2112-12-21"></input>
+                        </div>
+                        <div class="col-6">
+                            <label for="wd-enddate">Until:</label>
+                            <input class="form-control" id="wd-enddate" type="date" value="2112-12-21"></input>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <button type="button" class="btn btn-secondary"><i class="fa fa-plus"></i> Add</button>
+                    </div>
+                </div>
+                <div><hr></div>
+                <div><input class="form-check-input" type="checkbox" value="" id="wd-notify-class">
+                    <label class="form-check-label" for="wd-notify-class">
+                      Notify users that this content has changed
+                    </label>
+                    <span class="float-end">
+                        <button type="button" class="btn btn-light">Cancel</button>
+                        <button type="button" class="btn btn-danger">Save</button>
+                    </span>
+                </div>
 
-<p>
-    Assign<br>
-    Assign to:<br>
-    <input value="Everyone"></input>
-</p>
+            </div>
 
-<p>
-    Due<br>
-    <input type="date"
-      value="2112-12-21"/>
-</p>
 
-<p>
-    Available From<br>
-    <input type="date"
-      value="2112-12-21"/>
-</p>
 
-<p>
-    Until<br>
-    <input type="date"
-      value="2112-12-21"/>
-</p>
-
-<p>
-    <a href="/Kanbas/Courses/Assignments/screen.html"><button type="button">Cancel</button></a>
-    <a href="/Kanbas/Courses/Assignments/screen.html"><button type="button">Save</button></a>
-</p>
+      </body>
+</html>

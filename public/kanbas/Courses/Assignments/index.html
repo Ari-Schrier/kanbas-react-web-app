@@ -1,119 +1,77 @@
-<input placeholder="Search for assignments" />
-<button type="button">Group</button> 
-<button type="button">Assignment</button>
-<select>
-    <option value="EDITDATES" selected>Edit Assignment Dates</option>
-    <option value="VAL2">Value 2</option>
-    <option value="VAL3">Value 3</option>
- </select>
+<html>
+    <head>
+        <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Assignments/index.css" />
+      </head>
+    <body>
+        <div class="flex-column">
+            <div class="row">
+                <div class="col-5">
+                    <input placeholder="Search for assignments" class="form-control w-25" />
+                </div>
+                <div class="col-3">
 
-<hr>
- <h2>ASSIGNMENTS 40% OF TOTAL</h2>
- <select>
-    <option value="ED" selected>Edit</option>
-    <option value="SG">Speed Grader</option>
-    <option value="DP">Duplicate</option>
-    <option value="DL">Delete</option>
-    <option value="M2">Move to...</option>
-    <option value="S2">Send to...</option>
-    <option value="C2">Copy to...</option>
-    <option value="SC">Share to Commons</option>
- </select>
- <ul>
-    <li>
-        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A1 - ENV + HTML</a><br>
-        <a href="#">Multiple Modules</a> | Not Available Yet
-    </li>
-    <li>
-        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A2 - CSS + BOOTSTRAP</a><br>
-        <a href="#">Multiple Modules</a> | Not Available Yet
-    </li>
-    <li>
-        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A3 - JS + REACT</a><br>
-        <a href="#">Multiple Modules</a> | Not Available Yet
-    </li>
-    <li>
-        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A4 - STATE + REDUX</a><br>
-        <a href="#">Multiple Modules</a> | Not Available Yet
-    </li>
-    <li>
-        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A5 - NODE + SESSION</a><br>
-        <a href="#">Multiple Modules</a> | Not Available Yet
-    </li>
-    <li>
-        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A6 - MONGO + MONGOOSE</a><br>
-        <a href="#">Multiple Modules</a> | Not Available Yet
-    </li>
+                </div>
+                <div class="col-4">
+                    <button type="button" class="btn btn-light float-end"><i class="fa fa-ellipsis-v"> </i></button>
+                    <button type="button" class="btn btn-danger float-end"><i class="fa fa-plus"></i> Assignment</button>
+                    <button type="button" class="btn btn-light float-end"><i class="fa fa-plus"></i> Group</button>
+                </div>
 
- </ul>
- <h2>QUIZZES 10% OF TOTAL</h2>
- <select>
-    <option value="ED" selected>Edit</option>
-    <option value="SG">Speed Grader</option>
-    <option value="DP">Dupliicate</option>
-    <option value="DL">Delete</option>
-    <option value="M2">Move to...</option>
-    <option value="S2">Send to...</option>
-    <option value="C2">Copy to...</option>
-    <option value="SC">Share to Commons</option>
- </select>
- <ul>
-    <li>
-        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">Q1 - HTML</a><br>
-        <a href="#">Multiple Modules</a> | Not Available Yet
-    </li>
-    <li>
-        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">Q2 - CSS</a><br>
-        <a href="#">Multiple Modules</a> | Not Available Yet
-    </li>
-    <li>
-        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">Q3 - JS,ES6</a><br>
-        <a href="#">Multiple Modules</a> | Not Available Yet
-    </li>
-    <li>
-        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">Q4 - NODE</a><br>
-        <a href="#">Multiple Modules</a> | Not Available Yet
-    </li>
-    <li>
-        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">Q5 - MONGO</a><br>
-        <a href="#">Multiple Modules</a> | Not Available Yet
-    </li>
- </ul>
- <h2>EXAM 20% OF TOTAL</h2>
- <select>
-    <option value="ED" selected>Edit</option>
-    <option value="SG">Speed Grader</option>
-    <option value="DP">Dupliicate</option>
-    <option value="DL">Delete</option>
-    <option value="M2">Move to...</option>
-    <option value="S2">Send to...</option>
-    <option value="C2">Copy to...</option>
-    <option value="SC">Share to Commons</option>
- </select>
- <ul>
-    <li>
-        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">Midterm</a><br>
-        <a href="#">Multiple Modules</a> | Not Available Yet
-    </li>
-    <li>
-        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">Final</a><br>
-        <a href="#">Multiple Modules</a> | Not Available Yet
-    </li>
- </ul>
- <h2>PROJECT 30% OF TOTAL</h2>
- <select>
-    <option value="ED" selected>Edit</option>
-    <option value="SG">Speed Grader</option>
-    <option value="DP">Dupliicate</option>
-    <option value="DL">Delete</option>
-    <option value="M2">Move to...</option>
-    <option value="S2">Send to...</option>
-    <option value="C2">Copy to...</option>
-    <option value="SC">Share to Commons</option>
- </select>
- <ul>
-    <li>
-        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">Project</a><br>
-        <a href="#">Multiple Modules</a> | Not Available Yet
-    </li>
- </ul>
+            <div class="row">
+                <ul class="list-group">
+                    <li class="list-group-item divider"><i class="fa fa-ellipsis-v wd-gimme-space"></i> <i class="fa fa-ellipsis-v wd-gimme-space"></i> <i class="fa fa-caret-down wd-gimme-space"></i> Assignments <span class="float-end">40% of Total <i class="fa fa-plus wd-gimme-space"></i> <i class="fa fa-ellipsis-v wd-gimme-space"></i></span></li>
+                    <li class="list-group-item">
+                        <ul class="list-group">
+                            <li class="list-group-item"><h5>A1 SETUP</h5></li>
+                            <li class="list-group-item">Week 0 - SETUP - week starting on September 5th <span class="float-end"> <span class="text-success"> <i class="fa fa-check-circle wd-gimme-space"></i></span>     <i class="fa fa-ellipsis-v wd-gimme-space"></i> </span></li>
+                            <li class="list-group-item">Due September 25th, 2022 | 100 pts</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <ul class="list-group">
+                            <li class="list-group-item"><h5>A2 HTML</h5></li>
+                            <li class="list-group-item">Week 1 - HTML - week starting on September 12th <span class="float-end"> <span class="text-success"> <i class="fa fa-check-circle wd-gimme-space"></i></span>     <i class="fa fa-ellipsis-v wd-gimme-space"></i> </span></li>
+                            <li class="list-group-item">Due October 2nd, 2022 | 100 pts</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <ul class="list-group">
+                            <li class="list-group-item"><h5>A3 CSS</h5></li>
+                            <li class="list-group-item">Week 2 - CSS - week starting on September 19th <span class="float-end"> <span class="text-success"> <i class="fa fa-check-circle wd-gimme-space"></i></span>     <i class="fa fa-ellipsis-v wd-gimme-space"></i> </span></li>
+                            <li class="list-group-item">Due October 9th, 2022 | 100 pts</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <ul class="list-group">
+                            <li class="list-group-item"><h5>A4 BOOTSTRAP</h5></li>
+                            <li class="list-group-item">Week 3 - BOOTSTRAP - week starting on September 26th <span class="float-end"> <span class="text-success"> <i class="fa fa-check-circle wd-gimme-space"></i></span>     <i class="fa fa-ellipsis-v wd-gimme-space"></i> </span></li>
+                            <li class="list-group-item">Due October 16th, 2022 | 100 pts</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <ul class="list-group">
+                            <li class="list-group-item"><h5>A5 JAVASCRIPT</h5></li>
+                            <li class="list-group-item">Week 4 - JAVASCRIPT - week starting on October 2nd <span class="float-end"> <span class="text-success"> <i class="fa fa-check-circle wd-gimme-space"></i></span>     <i class="fa fa-ellipsis-v wd-gimme-space"></i> </span></li>
+                            <li class="list-group-item">Due October 23rd, 2022 | 100 pts</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <ul class="list-group">
+                            <li class="list-group-item"><h5>A6 REACT</h5></li>
+                            <li class="list-group-item">Week 5 - REACT - week starting on October 9th <span class="float-end"> <span class="text-success"> <i class="fa fa-check-circle wd-gimme-space"></i></span>     <i class="fa fa-ellipsis-v wd-gimme-space"></i> </span></li>
+                            <li class="list-group-item">Due October 30th, 2022 | 100 pts</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            
+                
+               
+            </div>
+            <hr>
+        </div>
+    </body>
+</html>
