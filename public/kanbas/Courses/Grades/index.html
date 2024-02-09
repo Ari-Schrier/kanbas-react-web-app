@@ -1,81 +1,169 @@
-<select>
-    <option selected>Gradebook</option>
-    <option>Change Gradebook View</option>
-    <option>Individual Gradebook</option>
-</select>
-<button type="button">Import</button>
-<select>
-    <option selected>Export</option>
-    <option>Export Current Gradebook</option>
-    <option>Export Entire Gradebook</option>
-</select>
-<button type="button">Configure</button>
-<h2>Student Names</h2>
-<input placeholder="Search Students" />
-<h2>Assignment Names</h2>
-<input placeholder="Search Assignments" />
-<p>
-    <button type="button">Apply Filters</button>
-</p>
-
-<table border="1">
-    <thead>
-        <tr>
-            <th rowspan="2">Student Name</th>
-            <th>SPANISH 101</th>
-            <th>SPANISH 102</th>
-            <th>ANTHROPOLOGY</th>
-            <th>LADDERS</th>
-        </tr>
-        <tr>
-            <td>Out of 100</th>
-            <td>Out of 100</th>
-            <td>Out of 100</th>
-            <td>Out of 100</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Jeff Winger</td>
-            <td><input type="number" min="0" max="100" value="75"> </td>
-            <td><input type="number" min="0" max="100" value="71"> </td>
-            <td><input type="number" min="0" max="100" value="65"> </td>
-            <td><input type="number" min="0" max="100" value="99"> </td>
-        </tr>
-        <tr>
-            <td>Britta Perry</td>
-            <td><input type="number" min="0" max="100" value="96"> </td>
-            <td><input type="number" min="0" max="100" value="35"> </td>
-            <td><input type="number" min="0" max="100" value="25"> </td>
-            <td><input type="number" min="0" max="100" value="54"> </td>
-        </tr>
-        <tr>
-            <td>Annie Edison</td>
-            <td><input type="number" min="0" max="100" value="100"> </td>
-            <td><input type="number" min="0" max="100" value="100"> </td>
-            <td><input type="number" min="0" max="100" value="100"> </td>
-            <td><input type="number" min="0" max="100" value="100"> </td>
-        </tr>
-        <tr>
-            <td>Troy Barnes</td>
-            <td><input type="number" min="0" max="100" value="85"> </td>
-            <td><input type="number" min="0" max="100" value="90"> </td>
-            <td><input type="number" min="0" max="100" value="87"> </td>
-            <td><input type="number" min="0" max="100" value="100"> </td>
-        </tr>
-        <tr>
-            <td>Abed Nadir</td>
-            <td><input type="number" min="0" max="100" value="55"> </td>
-            <td><input type="number" min="0" max="100" value="61"> </td>
-            <td><input type="number" min="0" max="100" value="80"> </td>
-            <td><input type="number" min="0" max="100" value="23"> </td>
-        </tr>
-        <tr>
-            <td>Shirley Bennett</td>
-            <td><input type="number" min="0" max="100" value="90"> </td>
-            <td><input type="number" min="0" max="100" value="87"> </td>
-            <td><input type="number" min="0" max="100" value="100"> </td>
-            <td><input type="number" min="0" max="100" value="0"> </td>
-        </tr>
-    </tbody>
-</table>
+<html>
+    <head>
+        <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Grades/index.css" />
+      </head>
+    <body>
+        <div class="flex-column bg-info" style="height:100%; width: 100%;"><!--Start of grades block-->
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="btn btn-light float-end m-1"><i class="fa fa-gear m-1"></i> </button>
+                    <button type="button" class="btn btn-light float-end m-1"><i class="fa fa-upload"></i> Export</button>
+                    <button type="button" class="btn btn-light float-end m-1"><i class="fa fa-download"></i> Import</button>
+                </div>
+            </div>
+            <div class="row m-2">
+                <div class="col-6">
+                    <label for="wd-studentname"></label><h4>Student Names</h4></label>
+                </div>
+                <div class="col-6">
+                    <label for="wd-assignment-name"></label><h4>Assignment Names</h4></label>
+                </div>
+                <div class="row m-2">
+                    <div class="col-6">
+                        <select class="form-control" id="wd-studentname">
+                            <option disabled selected><i class="fa fa-search"></i> Search Students</option>
+                            <option>Jeff Winger</option>
+                            <option>Britta Perry</option>
+                            <option>Abed Nadir</option>
+                            <option>Annie Edison</option>
+                            <option>Troy Barnes</option>
+                            <option>Shirley Bennet</option>
+                          </select>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-control" id="wd-wd-assignment-name">
+                            <option disabled selected><i class="fa fa-search"></i> Search Assignments</option>
+                            <option>Spanish 101</option>
+                            <option>Spanish 102</option>
+                            <option>Anthropology</option>
+                            <option>Ladders</option>
+                            <option>Advanced Dungeons and Dragons</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="row m-1">
+                    <div class="col-12">
+                        <button type="button" class="btn btn-secondary btn-lg"><i class="fa fa-filter"></i> Apply Filters </button>
+                    </div>
+                </div>
+                <div class="row m-1">
+                    <table class="table">
+                        <thead>
+                            <tr class="table-secondary">
+                                <th rowspan="2" scope="col">Student Name</th>
+                                <th scope="col">SPANISH 101</th>
+                                <th scope="col">SPANISH 102</th>
+                                <th scope="col">ANTHROPOLOGY</th>
+                                <th scope="col">LADDERS</th>
+                                <th scope="col">ADVANCED DUNGEONS AND DRAGONS</th>
+                                <th scope="col">CONTEMPORARY AMERICAN POULTRY</th>
+                            </tr>
+                            <tr class="table-secondary">
+                                <td>Out of 100</th>
+                                <td>Out of 100</th>
+                                <td>Out of 100</th>
+                                <td>Out of 100</th>
+                                <td>Out of 100</th>
+                                <td>Out of 100</th> 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="text-danger" scope="row ">Jeff Winger</th>
+                                <td><input type="number" min="0" max="100" value="75"> </td>
+                                <td><input type="number" min="0" max="100" value="71"> </td>
+                                <td><input type="number" min="0" max="100" value="65"> </td>
+                                <td><input type="number" min="0" max="100" value="99"> </td>
+                                <td><input type="number" min="0" max="100" value="56"> </td>
+                                <td><input type="number" min="0" max="100" value="100"> </td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <th class="text-danger" scope="row">Britta Perry</th>
+                                <td><input type="number" min="0" max="100" value="96"> </td>
+                                <td><input type="number" min="0" max="100" value="35"> </td>
+                                <td><input type="number" min="0" max="100" value="25"> </td>
+                                <td><input type="number" min="0" max="100" value="54"> </td>
+                                <td><input type="number" min="0" max="100" value="66"> </td>
+                                <td><input type="number" min="0" max="100" value="80"> </td>
+                            </tr>
+                            <tr>
+                                <th class="text-danger" scope="row">Annie Edison</th>
+                                <td><input type="number" min="0" max="100" value="100"> </td>
+                                <td><input type="number" min="0" max="100" value="100"> </td>
+                                <td><input type="number" min="0" max="100" value="100"> </td>
+                                <td><input type="number" min="0" max="100" value="100"> </td>
+                                <td><input type="number" min="0" max="100" value="100"> </td>
+                                <td><input type="number" min="0" max="100" value="99"> </td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <th class="text-danger" scope="row">Troy Barnes</th>
+                                <td><input type="number" min="0" max="100" value="85"> </td>
+                                <td><input type="number" min="0" max="100" value="90"> </td>
+                                <td><input type="number" min="0" max="100" value="87"> </td>
+                                <td><input type="number" min="0" max="100" value="100"> </td>
+                                <td><input type="number" min="0" max="100" value="100"> </td>
+                                <td><input type="number" min="0" max="100" value="100"> </td>
+                            </tr>
+                            <tr>
+                                <th class="text-danger" scope="row">Abed Nadir</th>
+                                <td><input type="number" min="0" max="100" value="55"> </td>
+                                <td><input type="number" min="0" max="100" value="61"> </td>
+                                <td><input type="number" min="0" max="100" value="80"> </td>
+                                <td><input type="number" min="0" max="100" value="23"> </td>
+                                <td><input type="number" min="0" max="100" value="100"> </td>
+                                <td><input type="number" min="0" max="100" value="100"> </td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <th class="text-danger" scope="row">Shirley Bennet</th>
+                                <td><input type="number" min="0" max="100" value="90"> </td>
+                                <td><input type="number" min="0" max="100" value="87"> </td>
+                                <td><input type="number" min="0" max="100" value="100"> </td>
+                                <td><input type="number" min="0" max="100" value="0"> </td>
+                                <td><input type="number" min="0" max="100" value="85"> </td>
+                                <td><input type="number" min="0" max="100" value="100"> </td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <th class="text-danger" scope="row">Magnitude</th>
+                                <td><input type="number" min="0" max="100" value="84"> </td>
+                                <td><input type="number" min="0" max="100" value="61"> </td>
+                                <td><input type="number" min="0" max="100" value="20"> </td>
+                                <td><input type="number" min="0" max="100" value="95"> </td>
+                                <td><input type="number" min="0" max="100" value="23"> </td>
+                                <td><input type="number" min="0" max="100" value="56"> </td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <th class="text-danger" scope="row">Fat Neil</th>
+                                <td><input type="number" min="0" max="100" value="23"> </td>
+                                <td><input type="number" min="0" max="100" value="98"> </td>
+                                <td><input type="number" min="0" max="100" value="100"> </td>
+                                <td><input type="number" min="0" max="100" value="98"> </td>
+                                <td><input type="number" min="0" max="100" value="83"> </td>
+                                <td><input type="number" min="0" max="100" value="100"> </td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <th class="text-danger" scope="row">Star-Burns</th>
+                                <td><input type="number" min="0" max="100" value="0"> </td>
+                                <td><input type="number" min="0" max="100" value="0"> </td>
+                                <td><input type="number" min="0" max="100" value="0"> </td>
+                                <td><input type="number" min="0" max="100" value="0"> </td>
+                                <td><input type="number" min="0" max="100" value="0"> </td>
+                                <td><input type="number" min="0" max="100" value="0"> </td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <th class="text-danger" scope="row">Leonard Rodriguez</th>
+                                <td><input type="number" min="0" max="100" value="43"> </td>
+                                <td><input type="number" min="0" max="100" value="32"> </td>
+                                <td><input type="number" min="0" max="100" value="19"> </td>
+                                <td><input type="number" min="0" max="100" value="0"> </td>
+                                <td><input type="number" min="0" max="100" value="0"> </td>
+                                <td><input type="number" min="0" max="100" value="13"> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div><!--End of grades block-->
+    </body>
+</html>
