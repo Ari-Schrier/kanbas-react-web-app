@@ -1,0 +1,98 @@
+[
+  {
+    "_id": "S1E21",
+    "name": "Contemporary American Poultry",
+    "number": "1-21",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "../images/contemporary-american-poultry.jpg"
+  },
+  {
+    "_id": "S2E14",
+    "name": "Advanced Dungeons and Dragons",
+    "number": "2-14",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "../images/advanced-dungeons-and-dragons.jpg"
+  },
+  {
+    "_id": "S5E8",
+    "name": "App Development and Condiments",
+    "number": "5-8",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "../images/app-development-and-condiments.jpg"
+  },
+  {
+    "_id": "S2E16",
+    "name": "Intermediate Documentary Filmmaking",
+    "number": "2-16",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "../images/intermediate-documentary-filmmaking.jpg"
+  },
+  {
+    "_id": "S2E19",
+    "name": "Critical Film Studies",
+    "number": "2-19",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "../images/critical-film-studies.jpg"
+  },
+  {
+    "_id": "S4E4-5",
+    "name": "Cooperative Polygraphy",
+    "number": "4-4-5",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "../images/cooperative-polygraphy.jpg"
+  },
+  {
+    "_id": "S2E10",
+    "name": "Mixology Certification",
+    "number": "2-10",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "../images/mixology-certification.jpg"
+  },
+  {
+    "_id": "S6E13",
+    "name": "Emotional Consequences of Broadcast Television",
+    "number": "6-13",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "../images/emotional-consequences-of-broadcast-television.jpg"
+  },
+  {
+    "_id": "S3E14",
+    "name": "Pillows and Blankets",
+    "number": "3-14",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "../images/pillows-and-blankets.jpg"
+  },
+  {
+    "_id": "S2E8",
+    "name": "Cooperative Polygraphy",
+    "number": "2-8",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "../images/cooperative-calligraphy.jpg"
+  },
+  {
+    "_id": "S3E17",
+    "name": "Basic Lupine Urology",
+    "number": "3-17",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "../images/basic-lupine-urology.jpg"
+  },
+  {
+    "_id": "S3E3",
+    "name": "Remedial Chaos Theory",
+    "number": "3-3",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "../images/remedial-chaos-theory.jpg"
+  }
+]

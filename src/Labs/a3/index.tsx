@@ -4,7 +4,6 @@ import Styles from "./Styles";
 import ConditionalOutput from "./ConditionalOutput";
 import Highlight from "./highlight";
 import Add from "./add";
-import TodoItem from "./Todos/TodoItem";
 import TodoList from "./Todos/TodoList";
 function Assignment3() {
  return (
