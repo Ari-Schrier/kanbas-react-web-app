@@ -1,0 +1,602 @@
+[
+  {
+    "_id": "A2011",
+    "course": "S2E14",
+    "title": "Character Building Exercise"
+  },
+  {
+    "_id": "A2012",
+    "course": "S2E14",
+    "title": "Strategic Combat Tactics Paper"
+  },
+  {
+    "_id": "A2013",
+    "course": "S2E14",
+    "title": "Campaign Plot Development Project"
+  },
+  {
+    "_id": "A2014",
+    "course": "S2E14",
+    "title": "World-Building in RPGs Essay"
+  },
+  {
+    "_id": "A2015",
+    "course": "S2E14",
+    "title": "Advanced Magic Systems Research Paper"
+  },
+  {
+    "_id": "A2016",
+    "course": "S2E14",
+    "title": "Role-Playing Session Design Assignment"
+  },
+  {
+    "_id": "A2017",
+    "course": "S2E14",
+    "title": "Game Mastering Techniques Report"
+  },
+  {
+    "_id": "A2018",
+    "course": "S2E14",
+    "title": "Digital RPG Platforms Project"
+  },
+  {
+    "_id": "A2019",
+    "course": "S2E14",
+    "title": "Ethical Dilemmas in RPGs Essay"
+  },
+  {
+    "_id": "A2020",
+    "course": "S2E14",
+    "title": "Future Trends in Tabletop Gaming Presentation"
+  },
+{
+    "_id": "A2001",
+    "course": "S1E21",
+    "title": "Poultry Farming Basics Assignment"
+  },
+  {
+    "_id": "A2002",
+    "course": "S1E21",
+    "title": "Chicken Breeds Research Paper"
+  },
+  {
+    "_id": "A2003",
+    "course": "S1E21",
+    "title": "Egg Production Techniques Project"
+  },
+  {
+    "_id": "A2004",
+    "course": "S1E21",
+    "title": "Poultry Health Management Presentation"
+  },
+  {
+    "_id": "A2005",
+    "course": "S1E21",
+    "title": "Market Analysis in Poultry Industry Essay"
+  },
+  {
+    "_id": "A2006",
+    "course": "S1E21",
+    "title": "Poultry Nutrition Report"
+  },
+  {
+    "_id": "A2007",
+    "course": "S1E21",
+    "title": "Poultry Housing Design Project"
+  },
+  {
+    "_id": "A2008",
+    "course": "S1E21",
+    "title": "Poultry Waste Management Essay"
+  },
+  {
+    "_id": "A2009",
+    "course": "S1E21",
+    "title": "Ethical Issues in Poultry Farming Assignment"
+  },
+  {
+    "_id": "A2010",
+    "course": "S1E21",
+    "title": "Future Trends in Poultry Industry Presentation"
+  },
+{
+    "_id": "A2021",
+    "course": "S5E8",
+    "title": "Introduction to Mobile App Development Project"
+  },
+  {
+    "_id": "A2022",
+    "course": "S5E8",
+    "title": "Android App Development Exercise"
+  },
+  {
+    "_id": "A2023",
+    "course": "S5E8",
+    "title": "iOS App Development Task"
+  },
+  {
+    "_id": "A2024",
+    "course": "S5E8",
+    "title": "User Interface Design Challenge"
+  },
+  {
+    "_id": "A2025",
+    "course": "S5E8",
+    "title": "App Testing and Debugging Assignment"
+  },
+  {
+    "_id": "A2026",
+    "course": "S5E8",
+    "title": "Database Integration Project"
+  },
+  {
+    "_id": "A2027",
+    "course": "S5E8",
+    "title": "Security Measures in App Development Essay"
+  },
+  {
+    "_id": "A2028",
+    "course": "S5E8",
+    "title": "App Monetization Strategies Report"
+  },
+  {
+    "_id": "A2029",
+    "course": "S5E8",
+    "title": "Future Trends in Mobile Apps Presentation"
+  },
+  {
+    "_id": "A2030",
+    "course": "S5E8",
+    "title": "App Store Optimization Assignment"
+  },
+{
+    "_id": "A2041",
+    "course": "S2E19",
+    "title": "Film Genre Theory Essay"
+  },
+  {
+    "_id": "A2042",
+    "course": "S2E19",
+    "title": "Auteur Theory Research Paper"
+  },
+  {
+    "_id": "A2043",
+    "course": "S2E19",
+    "title": "Feminist Film Criticism Assignment"
+  },
+  {
+    "_id": "A2044",
+    "course": "S2E19",
+    "title": "Postmodern Film Analysis Task"
+  },
+  {
+    "_id": "A2045",
+    "course": "S2E19",
+    "title": "Film Semiotics Exercise"
+  },
+  {
+    "_id": "A2046",
+    "course": "S2E19",
+    "title": "National Cinema Research Project"
+  },
+  {
+    "_id": "A2047",
+    "course": "S2E19",
+    "title": "Cinematic Representations of Race Essay"
+  },
+  {
+    "_id": "A2048",
+    "course": "S2E19",
+    "title": "Film Festivals and Industry Report"
+  },
+  {
+    "_id": "A2049",
+    "course": "S2E19",
+    "title": "Experimental Film Analysis Assignment"
+  },
+  {
+    "_id": "A2050",
+    "course": "S2E19",
+    "title": "Future Trends in Film Studies Presentation"
+  },
+{
+    "_id": "A2031",
+    "course": "S2E16",
+    "title": "Documentary Storyboarding Exercise"
+  },
+  {
+    "_id": "A2032",
+    "course": "S2E16",
+    "title": "Cinematography Techniques Essay"
+  },
+  {
+    "_id": "A2033",
+    "course": "S2E16",
+    "title": "Interviewing Techniques for Documentaries Project"
+  },
+  {
+    "_id": "A2034",
+    "course": "S2E16",
+    "title": "Documentary Editing and Post-Production Task"
+  },
+  {
+    "_id": "A2035",
+    "course": "S2E16",
+    "title": "Documentary Sound Design Challenge"
+  },
+  {
+    "_id": "A2036",
+    "course": "S2E16",
+    "title": "Documentary Ethics and Integrity Assignment"
+  },
+  {
+    "_id": "A2037",
+    "course": "S2E16",
+    "title": "Documentary Distribution Strategies Report"
+  },
+  {
+    "_id": "A2038",
+    "course": "S2E16",
+    "title": "Funding Documentary Projects Essay"
+  },
+  {
+    "_id": "A2039",
+    "course": "S2E16",
+    "title": "Documentary Impact Assessment Project"
+  },
+  {
+    "_id": "A2040",
+    "course": "S2E16",
+    "title": "Future Trends in Documentary Filmmaking Presentation"
+  },
+ {
+    "_id": "A2051",
+    "course": "S4E4-5",
+    "title": "Group Decision Making Strategies Report"
+  },
+  {
+    "_id": "A2052",
+    "course": "S4E4-5",
+    "title": "Effective Communication in Teams Presentation"
+  },
+  {
+    "_id": "A2053",
+    "course": "S4E4-5",
+    "title": "Conflict Resolution Techniques Essay"
+  },
+  {
+    "_id": "A2054",
+    "course": "S4E4-5",
+    "title": "Trust Building Exercises Assignment"
+  },
+  {
+    "_id": "A2055",
+    "course": "S4E4-5",
+    "title": "Team Building Activities Project"
+  },
+  {
+    "_id": "A2056",
+    "course": "S4E4-5",
+    "title": "Virtual Team Collaboration Task"
+  },
+  {
+    "_id": "A2057",
+    "course": "S4E4-5",
+    "title": "Cross-Cultural Communication Essay"
+  },
+  {
+    "_id": "A2058",
+    "course": "S4E4-5",
+    "title": "Leadership Styles in Teams Report"
+  },
+  {
+    "_id": "A2059",
+    "course": "S4E4-5",
+    "title": "Feedback and Performance Evaluation Assignment"
+  },
+  {
+    "_id": "A2060",
+    "course": "S4E4-5",
+    "title": "Future Trends in Team Dynamics Presentation"
+  },
+{
+    "_id": "A2061",
+    "course": "S2E10",
+    "title": "History of Mixology Research Paper"
+  },
+  {
+    "_id": "A2062",
+    "course": "S2E10",
+    "title": "Classic Cocktails and Recipes Task"
+  },
+  {
+    "_id": "A2063",
+    "course": "S2E10",
+    "title": "Mixing Techniques and Tools Presentation"
+  },
+  {
+    "_id": "A2064",
+    "course": "S2E10",
+    "title": "Bartending Etiquette Assignment"
+  },
+  {
+    "_id": "A2065",
+    "course": "S2E10",
+    "title": "Tasting and Flavor Profiles Essay"
+  },
+  {
+    "_id": "A2066",
+    "course": "S2E10",
+    "title": "Mixology Lab Experiment"
+  },
+  {
+    "_id": "A2067",
+    "course": "S2E10",
+    "title": "Cocktail Menu Creation Project"
+  },
+  {
+    "_id": "A2068",
+    "course": "S2E10",
+    "title": "Advanced Mixology Techniques Report"
+  },
+  {
+    "_id": "A2069",
+    "course": "S2E10",
+    "title": "Mixology Business Plan Assignment"
+  },
+  {
+    "_id": "A2070",
+    "course": "S2E10",
+    "title": "Future Trends in Mixology Presentation"
+  },
+ {
+    "_id": "A2071",
+    "course": "S6E13",
+    "title": "Television and Emotional Response Paper"
+  },
+  {
+    "_id": "A2072",
+    "course": "S6E13",
+    "title": "Audience Engagement Strategies Project"
+  },
+  {
+    "_id": "A2073",
+    "course": "S6E13",
+    "title": "TV Show Impact on Society Essay"
+  },
+  {
+    "_id": "A2074",
+    "course": "S6E13",
+    "title": "Analyzing TV Narratives Assignment"
+  },
+  {
+    "_id": "A2075",
+    "course": "S6E13",
+    "title": "TV Show Ratings and Viewership Report"
+  },
+  {
+    "_id": "A2076",
+    "course": "S6E13",
+    "title": "TV Network Programming Task"
+  },
+  {
+    "_id": "A2077",
+    "course": "S6E13",
+    "title": "Television Advertising Analysis Essay"
+  },
+  {
+    "_id": "A2078",
+    "course": "S6E13",
+    "title": "TV Show Content Regulation Project"
+  },
+  {
+    "_id": "A2079",
+    "course": "S6E13",
+    "title": "TV Show Fan Culture Report"
+  },
+  {
+    "_id": "A2080",
+    "course": "S6E13",
+    "title": "Future Trends in Broadcast Television Presentation"
+  },
+{
+    "_id": "A2081",
+    "course": "S3E14",
+    "title": "History of Pillows and Blankets Essay"
+  },
+  {
+    "_id": "A2082",
+    "course": "S3E14",
+    "title": "Cultural Significance of Bedding Research Paper"
+  },
+  {
+    "_id": "A2083",
+    "course": "S3E14",
+    "title": "Psychological Comfort of Pillows and Blankets Assignment"
+  },
+  {
+    "_id": "A2084",
+    "course": "S3E14",
+    "title": "Textile Production Techniques Project"
+  },
+  {
+    "_id": "A2085",
+    "course": "S3E14",
+    "title": "Designing Personalized Bedding Presentation"
+  },
+  {
+    "_id": "A2086",
+    "course": "S3E14",
+    "title": "Sustainability in Bedding Industry Essay"
+  },
+  {
+    "_id": "A2087",
+    "course": "S3E14",
+    "title": "Marketing Strategies for Bedding Products Report"
+  },
+  {
+    "_id": "A2088",
+    "course": "S3E14",
+    "title": "Consumer Preferences in Bedding Assignment"
+  },
+  {
+    "_id": "A2089",
+    "course": "S3E14",
+    "title": "Innovations in Bedding Technology Project"
+  },
+  {
+    "_id": "A2090",
+    "course": "S3E14",
+    "title": "Future Trends in Pillows and Blankets Presentation"
+  },
+{
+    "_id": "A2091",
+    "course": "S2E8",
+    "title": "Effective Team Communication Exercise"
+  },
+  {
+    "_id": "A2092",
+    "course": "S2E8",
+    "title": "Conflict Resolution Strategies Project"
+  },
+  {
+    "_id": "A2093",
+    "course": "S2E8",
+    "title": "Building Trust in Teams Assignment"
+  },
+  {
+    "_id": "A2094",
+    "course": "S2E8",
+    "title": "Collaborative Decision Making Task"
+  },
+  {
+    "_id": "A2095",
+    "course": "S2E8",
+    "title": "Leadership Dynamics in Teams Essay"
+  },
+  {
+    "_id": "A2096",
+    "course": "S2E8",
+    "title": "Team Conflict Case Study Analysis"
+  },
+  {
+    "_id": "A2097",
+    "course": "S2E8",
+    "title": "Team Building Activities Report"
+  },
+  {
+    "_id": "A2098",
+    "course": "S2E8",
+    "title": "Effective Virtual Collaboration Assignment"
+  },
+  {
+    "_id": "A2099",
+    "course": "S2E8",
+    "title": "Feedback and Performance Evaluation Essay"
+  },
+  {
+    "_id": "A2100",
+    "course": "S2E8",
+    "title": "Future Trends in Team Dynamics Presentation"
+  },
+{
+    "_id": "A2101",
+    "course": "S3E17",
+    "title": "Urinary System Anatomy Assignment"
+  },
+  {
+    "_id": "A2102",
+    "course": "S3E17",
+    "title": "Common Urological Disorders Research Paper"
+  },
+  {
+    "_id": "A2103",
+    "course": "S3E17",
+    "title": "Diagnostic Techniques in Urology Task"
+  },
+  {
+    "_id": "A2104",
+    "course": "S3E17",
+    "title": "Surgical Interventions in Urology Essay"
+  },
+  {
+    "_id": "A2105",
+    "course": "S3E17",
+    "title": "Patient Case Study Analysis Project"
+  },
+  {
+    "_id": "A2106",
+    "course": "S3E17",
+    "title": "Advancements in Urological Treatments Report"
+  },
+  {
+    "_id": "A2107",
+    "course": "S3E17",
+    "title": "Ethical Issues in Urology Assignment"
+  },
+  {
+    "_id": "A2108",
+    "course": "S3E17",
+    "title": "Public Health Strategies in Urology Essay"
+  },
+  {
+    "_id": "A2109",
+    "course": "S3E17",
+    "title": "Future Trends in Urology Presentation"
+  },
+  {
+    "_id": "A2110",
+    "course": "S3E17",
+    "title": "Urological Research Proposal Project"
+  },
+{
+    "_id": "A2111",
+    "course": "S3E3",
+    "title": "Chaos Theory Principles Essay"
+  },
+  {
+    "_id": "A2112",
+    "course": "S3E3",
+    "title": "Butterfly Effect Research Paper"
+  },
+  {
+    "_id": "A2113",
+    "course": "S3E3",
+    "title": "Deterministic Chaos Assignment"
+  },
+  {
+    "_id": "A2114",
+    "course": "S3E3",
+    "title": "Chaos in Dynamical Systems Essay"
+  },
+  {
+    "_id": "A2115",
+    "course": "S3E3",
+    "title": "Quantum Chaos Task"
+  },
+  {
+    "_id": "A2116",
+    "course": "S3E3",
+    "title": "Applications of Chaos Theory Project"
+  },
+  {
+    "_id": "A2117",
+    "course": "S3E3",
+    "title": "Chaos and Complexity Report"
+  },
+  {
+    "_id": "A2118",
+    "course": "S3E3",
+    "title": "Chaos Theory in Popular Culture Assignment"
+  },
+  {
+    "_id": "A2119",
+    "course": "S3E3",
+    "title": "Future Trends in Chaos Theory Presentation"
+  },
+  {
+    "_id": "A2120",
+    "course": "S3E3",
+    "title": "Chaos Theory Research Proposal"
+  }
+]

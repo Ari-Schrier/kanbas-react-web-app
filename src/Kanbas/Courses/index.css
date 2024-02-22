@@ -1,0 +1,25 @@
+.wd-breadbox{
+    --bs-breadcrumb-divider: '>';
+    color:red;
+}
+
+.breadcrumb-item > a{
+    text-decoration: none;
+    color: red;
+}
+
+.active > a{
+    color:black;
+}
+
+.wd-modules{
+    border-radius: 0px;
+    border-color: gainsboro;
+}
+
+.wd-modules li{
+    background-color: whitesmoke;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-color: gainsboro;
+}

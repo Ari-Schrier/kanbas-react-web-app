@@ -1,0 +1,939 @@
+[
+  {
+    "_id": "M201",
+    "name": "Poultry Farming History",
+    "description": "A brief history of poultry farming and its evolution in American agriculture.",
+    "course": "S1E21",
+    "lessons": [
+      {
+        "_id": "L401",
+        "name": "Origins of Poultry Farming",
+        "description": "Exploring the origins and early practices of poultry farming.",
+        "module": "M201"
+      },
+      {
+        "_id": "L402",
+        "name": "Industrialization of Poultry Production",
+        "description": "Understanding how poultry farming became industrialized in America.",
+        "module": "M201"
+      },
+      {
+        "_id": "L403",
+        "name": "Contemporary Practices",
+        "description": "Examining modern methods and trends in American poultry farming.",
+        "module": "M201"
+      }
+    ]
+  },
+  {
+    "_id": "M202",
+    "name": "Poultry Breeds",
+    "description": "Identification and characteristics of common poultry breeds in the United States.",
+    "course": "S1E21",
+    "lessons": [
+      {
+        "_id": "L404",
+        "name": "Chicken Breeds",
+        "description": "Overview of various chicken breeds and their traits.",
+        "module": "M202"
+      },
+      {
+        "_id": "L405",
+        "name": "Turkey Breeds",
+        "description": "Identifying different turkey breeds and their uses.",
+        "module": "M202"
+      },
+      {
+        "_id": "L406",
+        "name": "Duck Breeds",
+        "description": "Examining popular duck breeds and their characteristics.",
+        "module": "M202"
+      }
+    ]
+  },
+  {
+    "_id": "M203",
+    "name": "Poultry Nutrition",
+    "description": "Understanding the nutritional requirements and feeding practices for poultry.",
+    "course": "S1E21",
+    "lessons": [
+      {
+        "_id": "L407",
+        "name": "Essential Nutrients",
+        "description": "Learning about the essential nutrients required for poultry health.",
+        "module": "M203"
+      },
+      {
+        "_id": "L408",
+        "name": "Feeding Strategies",
+        "description": "Exploring different feeding strategies for optimal poultry growth and health.",
+        "module": "M203"
+      },
+      {
+        "_id": "L409",
+        "name": "Nutritional Disorders",
+        "description": "Identifying common nutritional disorders in poultry and their prevention.",
+        "module": "M203"
+      }
+    ]
+  },
+    {
+      "_id": "M301",
+      "name": "History of Dungeons and Dragons",
+      "description": "Exploring the origins and evolution of the Dungeons and Dragons game.",
+      "course": "S2E14",
+      "lessons": [
+        {
+          "_id": "L501",
+          "name": "Origins of Dungeons and Dragons",
+          "description": "Tracing the development of Dungeons and Dragons from its inception.",
+          "module": "M301"
+        },
+        {
+          "_id": "L502",
+          "name": "Evolution of Gameplay",
+          "description": "Examining how gameplay mechanics have evolved throughout the history of Dungeons and Dragons.",
+          "module": "M301"
+        },
+        {
+          "_id": "L503",
+          "name": "Cultural Impact",
+          "description": "Analyzing the cultural impact and significance of Dungeons and Dragons.",
+          "module": "M301"
+        }
+      ]
+    },
+    {
+      "_id": "M302",
+      "name": "Game Mechanics",
+      "description": "Understanding the core mechanics and rules of Dungeons and Dragons gameplay.",
+      "course": "S2E14",
+      "lessons": [
+        {
+          "_id": "L504",
+          "name": "Character Creation",
+          "description": "Guidelines and considerations for creating characters in Dungeons and Dragons.",
+          "module": "M302"
+        },
+        {
+          "_id": "L505",
+          "name": "Combat Mechanics",
+          "description": "Exploring the rules and strategies involved in combat within Dungeons and Dragons.",
+          "module": "M302"
+        },
+        {
+          "_id": "L506",
+          "name": "Magic Systems",
+          "description": "Understanding the various magic systems and spells in Dungeons and Dragons.",
+          "module": "M302"
+        }
+      ]
+    },
+    {
+      "_id": "M303",
+      "name": "Campaign Building",
+      "description": "Strategies and techniques for creating immersive and engaging Dungeons and Dragons campaigns.",
+      "course": "S2E14",
+      "lessons": [
+        {
+          "_id": "L507",
+          "name": "Worldbuilding",
+          "description": "Developing rich and detailed worlds for Dungeons and Dragons campaigns.",
+          "module": "M303"
+        },
+        {
+          "_id": "L508",
+          "name": "Quest Design",
+          "description": "Creating compelling quests and adventures for players to embark on.",
+          "module": "M303"
+        },
+        {
+          "_id": "L509",
+          "name": "NPC Creation",
+          "description": "Designing memorable non-player characters to populate Dungeons and Dragons campaigns.",
+          "module": "M303"
+        }
+      ]
+    },
+    {
+      "_id": "M401",
+      "name": "Introduction to App Development",
+      "description": "An overview of app development processes, tools, and technologies.",
+      "course": "S5E8",
+      "lessons": [
+        {
+          "_id": "L601",
+          "name": "Basics of Programming",
+          "description": "Introduction to programming concepts and languages used in app development.",
+          "module": "M401"
+        },
+        {
+          "_id": "L602",
+          "name": "App Design Principles",
+          "description": "Fundamental principles and guidelines for designing user-friendly apps.",
+          "module": "M401"
+        },
+        {
+          "_id": "L603",
+          "name": "Development Environments",
+          "description": "Exploring different development environments and tools for app creation.",
+          "module": "M401"
+        }
+      ]
+    },
+    {
+      "_id": "M402",
+      "name": "Mobile App Development",
+      "description": "Understanding the process of developing mobile applications for various platforms.",
+      "course": "S5E8",
+      "lessons": [
+        {
+          "_id": "L604",
+          "name": "iOS Development",
+          "description": "Introduction to developing apps for the iOS platform using Swift or Objective-C.",
+          "module": "M402"
+        },
+        {
+          "_id": "L605",
+          "name": "Android Development",
+          "description": "Introduction to developing apps for the Android platform using Java or Kotlin.",
+          "module": "M402"
+        },
+        {
+          "_id": "L606",
+          "name": "Cross-Platform Development",
+          "description": "Exploring frameworks and tools for developing apps that run on multiple platforms.",
+          "module": "M402"
+        }
+      ]
+    },
+    {
+      "_id": "M403",
+      "name": "Condiment Integration",
+      "description": "Incorporating condiments into app development projects for enhanced user experience.",
+      "course": "S5E8",
+      "lessons": [
+        {
+          "_id": "L607",
+          "name": "Condiment APIs",
+          "description": "Using APIs to integrate condiments such as ketchup, mustard, and mayo into apps.",
+          "module": "M403"
+        },
+        {
+          "_id": "L608",
+          "name": "User Preferences and Customization",
+          "description": "Implementing features that allow users to personalize their condiment preferences within apps.",
+          "module": "M403"
+        },
+        {
+          "_id": "L609",
+          "name": "Condiment-Based UI Design",
+          "description": "Designing user interfaces that incorporate condiment-themed elements for a unique user experience.",
+          "module": "M403"
+        }
+      ]
+    },
+    {
+      "_id": "M501",
+      "name": "Documentary Storytelling",
+      "description": "Exploring techniques for crafting compelling narratives in documentary filmmaking.",
+      "course": "S2E16",
+      "lessons": [
+        {
+          "_id": "L701",
+          "name": "Story Development",
+          "description": "Understanding the process of developing a strong narrative for a documentary.",
+          "module": "M501"
+        },
+        {
+          "_id": "L702",
+          "name": "Interview Techniques",
+          "description": "Learning effective techniques for conducting and filming interviews for documentaries.",
+          "module": "M501"
+        },
+        {
+          "_id": "L703",
+          "name": "Archival Footage",
+          "description": "Utilizing archival footage to enhance storytelling and provide context in documentaries.",
+          "module": "M501"
+        }
+      ]
+    },
+    {
+      "_id": "M502",
+      "name": "Documentary Production",
+      "description": "Understanding the technical aspects and logistics of documentary production.",
+      "course": "S2E16",
+      "lessons": [
+        {
+          "_id": "L704",
+          "name": "Cinematography",
+          "description": "Exploring techniques for capturing visually stunning footage in documentary filmmaking.",
+          "module": "M502"
+        },
+        {
+          "_id": "L705",
+          "name": "Sound Design",
+          "description": "Understanding the importance of sound and techniques for achieving high-quality audio in documentaries.",
+          "module": "M502"
+        },
+        {
+          "_id": "L706",
+          "name": "Editing",
+          "description": "Learning the art of editing to assemble footage into a cohesive and engaging documentary.",
+          "module": "M502"
+        }
+      ]
+    },
+    {
+      "_id": "M503",
+      "name": "Documentary Ethics and Impact",
+      "description": "Exploring ethical considerations and the potential impact of documentaries on audiences and subjects.",
+      "course": "S2E16",
+      "lessons": [
+        {
+          "_id": "L707",
+          "name": "Ethical Filmmaking Practices",
+          "description": "Understanding ethical guidelines and responsibilities when creating documentaries.",
+          "module": "M503"
+        },
+        {
+          "_id": "L708",
+          "name": "Audience Engagement",
+          "description": "Strategies for engaging and connecting with audiences through documentary filmmaking.",
+          "module": "M503"
+        },
+        {
+          "_id": "L709",
+          "name": "Social Impact",
+          "description": "Exploring the potential of documentaries to spark social change and raise awareness.",
+          "module": "M503"
+        }
+      ]
+    },
+    {
+      "_id": "M601",
+      "name": "Pulp Fiction Analysis",
+      "description": "In-depth analysis of the film 'Pulp Fiction' and its impact on cinema.",
+      "course": "S2E19",
+      "lessons": [
+        {
+          "_id": "L801",
+          "name": "Narrative Structure",
+          "description": "Exploring the nonlinear narrative structure of 'Pulp Fiction' and its influence on storytelling.",
+          "module": "M601"
+        },
+        {
+          "_id": "L802",
+          "name": "Character Dynamics",
+          "description": "Analyzing the complex and interconnected characters in 'Pulp Fiction' and their development.",
+          "module": "M601"
+        },
+        {
+          "_id": "L803",
+          "name": "Themes and Motifs",
+          "description": "Examining the recurring themes and motifs present in 'Pulp Fiction' and their significance.",
+          "module": "M601"
+        }
+      ]
+    },
+    {
+      "_id": "M602",
+      "name": "Genre Studies",
+      "description": "Exploring the various genres and influences present in 'Pulp Fiction' and similar films.",
+      "course": "S2E19",
+      "lessons": [
+        {
+          "_id": "L804",
+          "name": "Neo-Noir Elements",
+          "description": "Identifying elements of neo-noir present in 'Pulp Fiction' and its impact on the genre.",
+          "module": "M602"
+        },
+        {
+          "_id": "L805",
+          "name": "Crime Drama Tropes",
+          "description": "Analyzing common crime drama tropes present in 'Pulp Fiction' and other films.",
+          "module": "M602"
+        },
+        {
+          "_id": "L806",
+          "name": "Postmodernism in Film",
+          "description": "Exploring postmodernist themes and techniques employed in 'Pulp Fiction' and related works.",
+          "module": "M602"
+        }
+      ]
+    },
+    {
+      "_id": "M603",
+      "name": "Cinematic Influence",
+      "description": "Examining the influence of 'Pulp Fiction' on contemporary cinema and filmmakers.",
+      "course": "S2E19",
+      "lessons": [
+        {
+          "_id": "L807",
+          "name": "Tarantino's Legacy",
+          "description": "Analyzing Quentin Tarantino's impact on filmmaking and his contribution to cinema.",
+          "module": "M603"
+        },
+        {
+          "_id": "L808",
+          "name": "Homages and References",
+          "description": "Exploring the homages and references to 'Pulp Fiction' in other films and popular culture.",
+          "module": "M603"
+        },
+        {
+          "_id": "L809",
+          "name": "Cinematic Subversion",
+          "description": "Examining how 'Pulp Fiction' subverted traditional cinematic conventions and its lasting influence.",
+          "module": "M603"
+        }
+      ]
+    },
+    {
+      "_id": "M701",
+      "name": "Letting Go and Moving Forward",
+      "description": "Exploring the concept of letting go and its importance in personal and professional growth.",
+      "course": "S4E4-5",
+      "lessons": [
+        {
+          "_id": "L901",
+          "name": "Understanding Attachment",
+          "description": "Examining the psychological aspects of attachment and its impact on personal development.",
+          "module": "M701"
+        },
+        {
+          "_id": "L902",
+          "name": "Coping with Loss",
+          "description": "Learning healthy coping mechanisms for dealing with loss and moving forward.",
+          "module": "M701"
+        },
+        {
+          "_id": "L903",
+          "name": "Embracing Change",
+          "description": "Exploring strategies for embracing change and adapting to new circumstances.",
+          "module": "M701"
+        }
+      ]
+    },
+    {
+      "_id": "M702",
+      "name": "Team Dynamics and Cooperation",
+      "description": "Understanding the importance of teamwork and cooperation in achieving common goals.",
+      "course": "S4E4-5",
+      "lessons": [
+        {
+          "_id": "L904",
+          "name": "Effective Communication",
+          "description": "Learning strategies for effective communication and conflict resolution within teams.",
+          "module": "M702"
+        },
+        {
+          "_id": "L905",
+          "name": "Building Trust",
+          "description": "Exploring techniques for building trust and fostering positive relationships within teams.",
+          "module": "M702"
+        },
+        {
+          "_id": "L906",
+          "name": "Overcoming Challenges",
+          "description": "Identifying common challenges in teamwork and developing strategies for overcoming them.",
+          "module": "M702"
+        }
+      ]
+    },
+    {
+      "_id": "M703",
+      "name": "Adapting to Unexpected Situations",
+      "description": "Developing resilience and adaptability skills to navigate unexpected challenges.",
+      "course": "S4E4-5",
+      "lessons": [
+        {
+          "_id": "L907",
+          "name": "The Floor is Lava: Adaptation Edition",
+          "description": "Drawing parallels between the game 'The Floor is Lava' and real-life situations, emphasizing the importance of quick adaptation.",
+          "module": "M703"
+        },
+        {
+          "_id": "L908",
+          "name": "Flexibility in Action",
+          "description": "Learning to be flexible and agile in response to unexpected changes and obstacles.",
+          "module": "M703"
+        },
+        {
+          "_id": "L909",
+          "name": "Resilience Building",
+          "description": "Developing resilience and mental toughness to thrive in unpredictable environments.",
+          "module": "M703"
+        }
+      ]
+    },
+    {
+      "_id": "M801",
+      "name": "Mixology Basics",
+      "description": "Foundational knowledge and techniques in mixology.",
+      "course": "S2E10",
+      "lessons": [
+        {
+          "_id": "L1001",
+          "name": "Understanding Spirits",
+          "description": "Introduction to various types of spirits and their characteristics.",
+          "module": "M801"
+        },
+        {
+          "_id": "L1002",
+          "name": "Essential Tools",
+          "description": "Overview of the essential tools used in mixology and their functions.",
+          "module": "M801"
+        },
+        {
+          "_id": "L1003",
+          "name": "Basic Mixers and Ingredients",
+          "description": "Exploring common mixers and ingredients used in cocktails.",
+          "module": "M801"
+        }
+      ]
+    },
+    {
+      "_id": "M802",
+      "name": "Classic Cocktails",
+      "description": "Learning the recipes and techniques for crafting classic cocktails.",
+      "course": "S2E10",
+      "lessons": [
+        {
+          "_id": "L1004",
+          "name": "Martini Mastery",
+          "description": "Mastering the art of making the perfect martini with various variations.",
+          "module": "M802"
+        },
+        {
+          "_id": "L1005",
+          "name": "Old Fashioned Excellence",
+          "description": "Understanding the history and technique behind the classic old fashioned cocktail.",
+          "module": "M802"
+        },
+        {
+          "_id": "L1006",
+          "name": "Margarita Magic",
+          "description": "Exploring the diverse world of margaritas and their flavor profiles.",
+          "module": "M802"
+        }
+      ]
+    },
+    {
+      "_id": "M803",
+      "name": "Advanced Mixology",
+      "description": "Delving into advanced techniques and innovative cocktail creations.",
+      "course": "S2E10",
+      "lessons": [
+        {
+          "_id": "L1007",
+          "name": "Crafting Signature Cocktails",
+          "description": "Learning to create unique and memorable cocktails tailored to individual preferences.",
+          "module": "M803"
+        },
+        {
+          "_id": "L1008",
+          "name": "Infusions and Tinctures",
+          "description": "Exploring the art of infusing flavors into spirits and creating custom tinctures.",
+          "module": "M803"
+        },
+        {
+          "_id": "L1009",
+          "name": "Presentation and Garnishes",
+          "description": "Enhancing cocktails with creative presentation techniques and garnishes.",
+          "module": "M803"
+        }
+      ]
+    },
+    {
+      "_id": "M901",
+      "name": "Understanding Emotional Responses",
+      "description": "Exploring the emotional impact of broadcast television on viewers.",
+      "course": "S6E13",
+      "lessons": [
+        {
+          "_id": "L1101",
+          "name": "Identifying Emotional Triggers",
+          "description": "Analyzing the elements of broadcast television that evoke emotional responses.",
+          "module": "M901"
+        },
+        {
+          "_id": "L1102",
+          "name": "Empathy and Connection",
+          "description": "Understanding how television narratives foster empathy and emotional connection with characters.",
+          "module": "M901"
+        },
+        {
+          "_id": "L1103",
+          "name": "Impact on Mental Health",
+          "description": "Exploring the relationship between prolonged television consumption and mental well-being.",
+          "module": "M901"
+        }
+      ]
+    },
+    {
+      "_id": "M902",
+      "name": "Narrative Analysis",
+      "description": "Analyzing the storytelling techniques and themes in broadcast television.",
+      "course": "S6E13",
+      "lessons": [
+        {
+          "_id": "L1104",
+          "name": "Character Development",
+          "description": "Examining the evolution of characters over multiple seasons and their emotional arcs.",
+          "module": "M902"
+        },
+        {
+          "_id": "L1105",
+          "name": "Plot Twists and Turns",
+          "description": "Analyzing the impact of unexpected plot twists on emotional engagement.",
+          "module": "M902"
+        },
+        {
+          "_id": "L1106",
+          "name": "Social and Cultural Commentary",
+          "description": "Exploring how television narratives reflect and comment on social and cultural issues.",
+          "module": "M902"
+        }
+      ]
+    },
+    {
+      "_id": "M903",
+      "name": "Media Consumption Patterns",
+      "description": "Understanding how viewing habits and binge-watching affect emotional responses to television.",
+      "course": "S6E13",
+      "lessons": [
+        {
+          "_id": "L1107",
+          "name": "Binge-Watching Behavior",
+          "description": "Examining the psychological effects of binge-watching television series on emotional well-being.",
+          "module": "M903"
+        },
+        {
+          "_id": "L1108",
+          "name": "Coping Mechanisms",
+          "description": "Identifying healthy coping mechanisms for managing emotional responses to television content.",
+          "module": "M903"
+        },
+        {
+          "_id": "L1109",
+          "name": "Balanced Media Consumption",
+          "description": "Developing strategies for maintaining a balanced approach to media consumption for emotional well-being.",
+          "module": "M903"
+        }
+      ]
+    },
+    {
+      "_id": "M1001",
+      "name": "History of Comfort",
+      "description": "Exploring the evolution of pillows and blankets throughout history.",
+      "course": "S3E14",
+      "lessons": [
+        {
+          "_id": "L1201",
+          "name": "Ancient Origins",
+          "description": "Tracing the origins of pillows and blankets in ancient civilizations.",
+          "module": "M1001"
+        },
+        {
+          "_id": "L1202",
+          "name": "Medieval Comfort",
+          "description": "Examining the use of pillows and blankets in medieval times and their significance.",
+          "module": "M1001"
+        },
+        {
+          "_id": "L1203",
+          "name": "Modern Innovations",
+          "description": "Exploring innovations in pillow and blanket design in the modern era.",
+          "module": "M1001"
+        }
+      ]
+    },
+    {
+      "_id": "M1002",
+      "name": "Textiles and Materials",
+      "description": "Understanding the different types of textiles and materials used in pillow and blanket manufacturing.",
+      "course": "S3E14",
+      "lessons": [
+        {
+          "_id": "L1204",
+          "name": "Natural Fibers",
+          "description": "Exploring the use of natural fibers such as cotton, wool, and silk in pillows and blankets.",
+          "module": "M1002"
+        },
+        {
+          "_id": "L1205",
+          "name": "Synthetic Materials",
+          "description": "Understanding the properties and benefits of synthetic materials like polyester and microfiber in pillow and blanket production.",
+          "module": "M1002"
+        },
+        {
+          "_id": "L1206",
+          "name": "Specialty Fabrics",
+          "description": "Examining specialty fabrics like memory foam and down feathers used in high-end pillows and blankets.",
+          "module": "M1002"
+        }
+      ]
+    },
+    {
+      "_id": "M1003",
+      "name": "Comfort and Wellness",
+      "description": "Exploring the relationship between pillows, blankets, and physical and emotional well-being.",
+      "course": "S3E14",
+      "lessons": [
+        {
+          "_id": "L1207",
+          "name": "Sleep Hygiene",
+          "description": "Learning about the importance of sleep hygiene and how pillows and blankets contribute to a good night's sleep.",
+          "module": "M1003"
+        },
+        {
+          "_id": "L1208",
+          "name": "Stress Reduction",
+          "description": "Exploring how pillows and blankets can be used to reduce stress and promote relaxation.",
+          "module": "M1003"
+        },
+        {
+          "_id": "L1209",
+          "name": "Ergonomics",
+          "description": "Understanding ergonomic design principles in pillows and blankets for optimal comfort and support.",
+          "module": "M1003"
+        }
+      ]
+    },
+    {
+      "_id": "M1101",
+      "name": "Truth and Deception",
+      "description": "Exploring the themes of truth and deception in Cooperative Polygraphy.",
+      "course": "S2E8",
+      "lessons": [
+        {
+          "_id": "L1301",
+          "name": "Polygraph Testing",
+          "description": "Understanding the principles and limitations of polygraph testing in determining truthfulness.",
+          "module": "M1101"
+        },
+        {
+          "_id": "L1302",
+          "name": "Deception Detection",
+          "description": "Learning techniques for detecting deception and interpreting polygraph results.",
+          "module": "M1101"
+        },
+        {
+          "_id": "L1303",
+          "name": "Ethical Considerations",
+          "description": "Examining the ethical implications of using polygraph tests in Cooperative Polygraphy.",
+          "module": "M1101"
+        }
+      ]
+    },
+    {
+      "_id": "M1102",
+      "name": "Bottle Episode",
+      "description": "Analyzing the narrative and production elements of the 'Bottle Episode' in television.",
+      "course": "S2E8",
+      "lessons": [
+        {
+          "_id": "L1304",
+          "name": "Definition and Characteristics",
+          "description": "Defining what constitutes a 'Bottle Episode' and identifying its common characteristics.",
+          "module": "M1102"
+        },
+        {
+          "_id": "L1305",
+          "name": "Creative Constraints",
+          "description": "Exploring the creative constraints and benefits of producing a 'Bottle Episode.'",
+          "module": "M1102"
+        },
+        {
+          "_id": "L1306",
+          "name": "Narrative Impact",
+          "description": "Analyzing the narrative impact and storytelling techniques used in 'Bottle Episodes.'",
+          "module": "M1102"
+        }
+      ]
+    },
+    {
+      "_id": "M1103",
+      "name": "Character Dynamics",
+      "description": "Examining the character interactions and development in Cooperative Polygraphy.",
+      "course": "S2E8",
+      "lessons": [
+        {
+          "_id": "L1307",
+          "name": "Interpersonal Relationships",
+          "description": "Analyzing the dynamics of interpersonal relationships among characters in Cooperative Polygraphy.",
+          "module": "M1103"
+        },
+        {
+          "_id": "L1308",
+          "name": "Character Growth",
+          "description": "Exploring the growth and evolution of characters throughout the episode.",
+          "module": "M1103"
+        },
+        {
+          "_id": "L1309",
+          "name": "Conflict Resolution",
+          "description": "Examining how conflicts are addressed and resolved among characters.",
+          "module": "M1103"
+        }
+      ]
+    },
+    {
+      "_id": "M1201",
+      "name": "Introduction to Urology",
+      "description": "An overview of the field of urology and its significance in healthcare.",
+      "course": "S3E17",
+      "lessons": [
+        {
+          "_id": "L1401",
+          "name": "Understanding Urological Disorders",
+          "description": "Introduction to common urological disorders and their impact on patients' health.",
+          "module": "M1201"
+        },
+        {
+          "_id": "L1402",
+          "name": "Diagnostic Techniques",
+          "description": "Exploring the diagnostic techniques used in urology to identify and treat disorders.",
+          "module": "M1201"
+        },
+        {
+          "_id": "L1403",
+          "name": "Treatment Modalities",
+          "description": "Overview of the various treatment modalities available for managing urological conditions.",
+          "module": "M1201"
+        }
+      ]
+    },
+    {
+      "_id": "M1202",
+      "name": "Forensic Investigation",
+      "description": "Applying forensic investigation techniques to solve urological mysteries.",
+      "course": "S3E17",
+      "lessons": [
+        {
+          "_id": "L1404",
+          "name": "Crime Scene Analysis",
+          "description": "Learning how to analyze urological 'crime scenes' to gather evidence.",
+          "module": "M1202"
+        },
+        {
+          "_id": "L1405",
+          "name": "Evidence Collection",
+          "description": "Understanding the importance of proper evidence collection in urological investigations.",
+          "module": "M1202"
+        },
+        {
+          "_id": "L1406",
+          "name": "Case Studies",
+          "description": "Examining real-life case studies to apply forensic techniques in solving urological mysteries.",
+          "module": "M1202"
+        }
+      ]
+    },
+    {
+      "_id": "M1203",
+      "name": "Legal and Ethical Considerations",
+      "description": "Exploring the legal and ethical aspects of urological practice and investigation.",
+      "course": "S3E17",
+      "lessons": [
+        {
+          "_id": "L1407",
+          "name": "Patient Confidentiality",
+          "description": "Understanding the importance of patient confidentiality and privacy in urological care.",
+          "module": "M1203"
+        },
+        {
+          "_id": "L1408",
+          "name": "Professional Conduct",
+          "description": "Exploring ethical guidelines and professional conduct standards in urological practice.",
+          "module": "M1203"
+        },
+        {
+          "_id": "L1409",
+          "name": "Legal Obligations",
+          "description": "Understanding legal obligations and responsibilities in urological practice and investigation.",
+          "module": "M1203"
+        }
+      ]
+    },
+    {
+      "_id": "M1301",
+      "name": "Introduction to Chaos Theory",
+      "description": "Understanding the fundamental principles of chaos theory and its applications.",
+      "course": "S3E3",
+      "lessons": [
+        {
+          "_id": "L1501",
+          "name": "Deterministic Chaos",
+          "description": "Exploring deterministic chaos and its implications for predicting complex systems.",
+          "module": "M1301"
+        },
+        {
+          "_id": "L1502",
+          "name": "Butterfly Effect",
+          "description": "Understanding the concept of the butterfly effect and its role in chaos theory.",
+          "module": "M1301"
+        },
+        {
+          "_id": "L1503",
+          "name": "Nonlinear Dynamics",
+          "description": "Exploring nonlinear dynamics and their importance in chaotic systems.",
+          "module": "M1301"
+        }
+      ]
+    },
+    {
+      "_id": "M1302",
+      "name": "Timeline Alterations",
+      "description": "Examining the concept of timeline alterations and their implications.",
+      "course": "S3E3",
+      "lessons": [
+        {
+          "_id": "L1504",
+          "name": "Temporal Paradoxes",
+          "description": "Exploring temporal paradoxes and their resolution in chaotic timelines.",
+          "module": "M1302"
+        },
+        {
+          "_id": "L1505",
+          "name": "Multiverse Theory",
+          "description": "Understanding multiverse theory and its relationship to chaotic timelines.",
+          "module": "M1302"
+        },
+        {
+          "_id": "L1506",
+          "name": "Alternate Realities",
+          "description": "Examining the concept of alternate realities and their manifestation in chaotic timelines.",
+          "module": "M1302"
+        }
+      ]
+    },
+    {
+      "_id": "M1303",
+      "name": "Causal Loops",
+      "description": "Exploring causal loops and their role in chaotic systems.",
+      "course": "S3E3",
+      "lessons": [
+        {
+          "_id": "L1507",
+          "name": "Bootstrap Paradox",
+          "description": "Understanding the bootstrap paradox and its significance in causal loops.",
+          "module": "M1303"
+        },
+        {
+          "_id": "L1508",
+          "name": "Predestination Paradox",
+          "description": "Exploring the concept of the predestination paradox and its implications for causal loops.",
+          "module": "M1303"
+        },
+        {
+          "_id": "L1509",
+          "name": "Self-Consistency Principle",
+          "description": "Understanding the self-consistency principle and its application in resolving causal loops.",
+          "module": "M1303"
+        }
+      ]
+    }
+]
+

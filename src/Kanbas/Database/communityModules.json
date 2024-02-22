@@ -1,0 +1,314 @@
+[
+    {
+      "_id": "S1E21",
+      "name": "Contemporary American Poultry",
+      "description": "Exploration of contemporary American poultry farming and industry.",
+      "course": "COMM101",
+      "lessons": [
+        {
+          "_id": "L1001",
+          "name": "Poultry Farming History",
+          "description": "A historical overview of poultry farming in America.",
+          "module": "S1E21"
+        },
+        {
+          "_id": "L1002",
+          "name": "Poultry Breeds",
+          "description": "Identification and characteristics of common poultry breeds.",
+          "module": "S1E21"
+        },
+        {
+          "_id": "L1003",
+          "name": "Poultry Industry Economics",
+          "description": "Analysis of economic factors affecting the contemporary American poultry industry.",
+          "module": "S1E21"
+        }
+      ]
+    },
+    {
+      "_id": "S2E14",
+      "name": "Advanced Dungeons and Dragons",
+      "description": "In-depth study of advanced strategies and gameplay in Dungeons and Dragons.",
+      "course": "COMM102",
+      "lessons": [
+        {
+          "_id": "L1004",
+          "name": "Character Creation",
+          "description": "Methods for creating complex and strategic characters in Dungeons and Dragons.",
+          "module": "S2E14"
+        },
+        {
+          "_id": "L1005",
+          "name": "Campaign Design",
+          "description": "Designing challenging and immersive campaigns for advanced players.",
+          "module": "S2E14"
+        },
+        {
+          "_id": "L1006",
+          "name": "Role-playing Strategies",
+          "description": "Advanced techniques for effective role-playing in Dungeons and Dragons.",
+          "module": "S2E14"
+        }
+      ]
+    },
+    {
+      "_id": "S5E8",
+      "name": "App Development and Condiments",
+      "description": "Exploration of app development principles and condiment usage in modern society.",
+      "course": "COMM103",
+      "lessons": [
+        {
+          "_id": "L1007",
+          "name": "App Development Fundamentals",
+          "description": "Basic principles and tools for developing mobile applications.",
+          "module": "S5E8"
+        },
+        {
+          "_id": "L1008",
+          "name": "Condiment History",
+          "description": "Historical overview of condiments and their cultural significance.",
+          "module": "S5E8"
+        },
+        {
+          "_id": "L1009",
+          "name": "Condiment Pairing",
+          "description": "Exploration of condiment pairing strategies in culinary arts.",
+          "module": "S5E8"
+        }
+      ]
+    },
+    {
+      "_id": "S2E16",
+      "name": "Intermediate Documentary Filmmaking",
+      "description": "Intermediate-level study of documentary filmmaking techniques and styles.",
+      "course": "COMM104",
+      "lessons": [
+        {
+          "_id": "L1010",
+          "name": "Documentary Filmmaking Styles",
+          "description": "Exploration of different styles and approaches in documentary filmmaking.",
+          "module": "S2E16"
+        },
+        {
+          "_id": "L1011",
+          "name": "Interview Techniques",
+          "description": "Effective techniques for conducting interviews in documentary filmmaking.",
+          "module": "S2E16"
+        },
+        {
+          "_id": "L1012",
+          "name": "Editing for Impact",
+          "description": "Strategies for editing footage to create impactful documentary narratives.",
+          "module": "S2E16"
+        }
+      ]
+    },
+    {
+      "_id": "S2E19",
+      "name": "Critical Film Studies",
+      "description": "Critical analysis of film as an art form and cultural artifact.",
+      "course": "COMM105",
+      "lessons": [
+        {
+          "_id": "L1013",
+          "name": "Film Theory",
+          "description": "Exploration of major theories in film studies and criticism.",
+          "module": "S2E19"
+        },
+        {
+          "_id": "L1014",
+          "name": "Cinematic Techniques",
+          "description": "Analysis of various cinematic techniques and their effects on audiences.",
+          "module": "S2E19"
+        },
+        {
+          "_id": "L1015",
+          "name": "Film Criticism",
+          "description": "Methods and principles of critiquing and analyzing films.",
+          "module": "S2E19"
+        }
+      ]
+    },
+    {
+      "_id": "S4E4-5",
+      "name": "Cooperative Polygraphy",
+      "description": "Study of cooperative decision-making and communication in group settings.",
+      "course": "COMM106",
+      "lessons": [
+        {
+          "_id": "L1016",
+          "name": "Group Dynamics",
+          "description": "Understanding the dynamics of group behavior and decision-making.",
+          "module": "S4E4-5"
+        },
+        {
+          "_id": "L1017",
+          "name": "Effective Communication",
+          "description": "Strategies for effective communication and collaboration within groups.",
+          "module": "S4E4-5"
+        },
+        {
+          "_id": "L1018",
+          "name": "Conflict Resolution",
+          "description": "Methods for resolving conflicts and disagreements within cooperative groups.",
+          "module": "S4E4-5"
+        }
+      ]
+    },
+    {
+      "_id": "S2E10",
+      "name": "Mixology Certification",
+      "description": "Certification program for mastering the art of mixology and cocktail crafting.",
+      "course": "COMM107",
+      "lessons": [
+        {
+          "_id": "L1019",
+          "name": "Cocktail Basics",
+          "description": "Fundamentals of cocktail crafting and mixology techniques.",
+          "module": "S2E10"
+        },
+        {
+          "_id": "L1020",
+          "name": "Advanced Mixology",
+          "description": "Exploration of advanced mixology concepts and cocktail recipes.",
+          "module": "S2E10"
+        },
+        {
+          "_id": "L1021",
+          "name": "Bartending Skills",
+          "description": "Developing essential bartending skills for professional mixologists.",
+          "module": "S2E10"
+        }
+      ]
+    },
+    {
+      "_id": "S6E13",
+      "name": "Emotional Consequences of Broadcast Television",
+      "description": "Analysis of the emotional impact of broadcast television on audiences.",
+      "course": "COMM108",
+      "lessons": [
+        {
+          "_id": "L1022",
+          "name": "Television Narratives",
+          "description": "Exploration of narrative techniques and storytelling in broadcast television.",
+          "module": "S6E13"
+        },
+        {
+          "_id": "L1023",
+          "name": "Audience Psychology",
+          "description": "Understanding the psychological effects of television on audiences.",
+          "module": "S6E13"
+        },
+        {
+          "_id": "L1024",
+          "name": "Television and Culture",
+          "description": "Analysis of the cultural significance and influence of television programming.",
+          "module": "S6E13"
+        }
+      ]
+    },
+    {
+      "_id": "S3E14",
+      "name": "Pillows and Blankets",
+      "description": "Exploration of the cultural and psychological significance of pillows and blankets.",
+      "course": "COMM109",
+      "lessons": [
+        {
+          "_id": "L1025",
+          "name": "Cultural Symbolism",
+          "description": "Analysis of the cultural symbols and meanings associated with pillows and blankets.",
+          "module": "S3E14"
+        },
+        {
+          "_id": "L1026",
+          "name": "Psychological Comfort",
+          "description": "Understanding the psychological comfort provided by pillows and blankets.",
+          "module": "S3E14"
+        },
+        {
+          "_id": "L1027",
+          "name": "Textile History",
+          "description": "Historical overview of textiles used in pillow and blanket production.",
+          "module": "S3E14"
+        }
+      ]
+    },
+    {
+      "_id": "S2E8",
+      "name": "Cooperative Polygraphy",
+      "description": "Study of cooperative decision-making and communication in group settings.",
+      "course": "COMM110",
+      "lessons": [
+        {
+          "_id": "L1028",
+          "name": "Group Dynamics",
+          "description": "Understanding the dynamics of group behavior and decision-making.",
+          "module": "S2E8"
+        },
+        {
+          "_id": "L1029",
+          "name": "Effective Communication",
+          "description": "Strategies for effective communication and collaboration within groups.",
+          "module": "S2E8"
+        },
+        {
+          "_id": "L1030",
+          "name": "Conflict Resolution",
+          "description": "Methods for resolving conflicts and disagreements within cooperative groups.",
+          "module": "S2E8"
+        }
+      ]
+    },
+    {
+      "_id": "S3E17",
+      "name": "Basic Lupine Urology",
+      "description": "Study of basic principles and techniques in lupine urology.",
+      "course": "COMM111",
+      "lessons": [
+        {
+          "_id": "L1031",
+          "name": "Lupine Anatomy",
+          "description": "Overview of the anatomy and physiology of lupine urinary systems.",
+          "module": "S3E17"
+        },
+        {
+          "_id": "L1032",
+          "name": "Urinary Disorders",
+          "description": "Identification and treatment of common urinary disorders in lupine species.",
+          "module": "S3E17"
+        },
+        {
+          "_id": "L1033",
+          "name": "Urological Procedures",
+          "description": "Procedures and techniques used in diagnosing and treating lupine urological conditions.",
+          "module": "S3E17"
+        }
+      ]
+    },
+    {
+      "_id": "S3E3",
+      "name": "Remedial Chaos Theory",
+      "description": "Study of chaos theory and its implications for decision-making and probability.",
+      "course": "COMM112",
+      "lessons": [
+        {
+          "_id": "L1034",
+          "name": "Chaos Theory Fundamentals",
+          "description": "Basic principles and concepts of chaos theory.",
+          "module": "S3E3"
+        },
+        {
+          "_id": "L1035",
+          "name": "Decision-Making under Uncertainty",
+          "description": "Strategies for making decisions in chaotic and unpredictable environments.",
+          "module": "S3E3"
+        },
+        {
+          "_id": "L1036",
+          "name": "Probability and Chaos",
+          "description": "Understanding the role of probability in chaotic systems.",
+          "module": "S3E3"
+        }
+      ]
+    }
+]
