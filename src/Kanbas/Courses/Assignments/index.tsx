@@ -23,9 +23,9 @@ function Assignments() {
 
         <hr />
       
-    <ul className="list-group wd-modules">
-        <li className="list-group-item">
-          <div>
+    <ul className="list-group">
+        <li className="list-group-item bg-light rounded-0 px-0 pb-0">
+          <div className="wd-assignment-header">
             <FaEllipsisV className="me-2" /> ASSIGNMENTS
             <span className="float-end">
               <FaCheckCircle className="text-success" />
@@ -34,9 +34,9 @@ function Assignments() {
           </div>
           <ul className="list-group">
             {assignmentList.map((assignment) => (
-              <li className="list-group-item">
+              <li className="list-group-item rounded-0 bg-white wd-assignment-border py-4">
                 <FaEllipsisV className="me-2" />
-                <Link
+                <Link className = "link-dark text-decoration-none font-weight-bold"
                    to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}>{assignment.title}</Link>
                 <span className="float-end">
                   <FaCheckCircle className="text-success" /><FaEllipsisV className="ms-2" /></span>

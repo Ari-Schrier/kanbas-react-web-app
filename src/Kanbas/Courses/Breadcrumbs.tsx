@@ -17,9 +17,12 @@ function Breadcrumbs() {
     });
 
     return (
+        <>
             <ol className="breadcrumb">
                 {crumbs}
             </ol>
+            <hr />
+        </>
     );
 }
 

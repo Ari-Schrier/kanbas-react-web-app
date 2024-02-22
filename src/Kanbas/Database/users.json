@@ -1,0 +1,92 @@
+[
+    {
+      "_id": "121",
+      "username": "lawyer_man",
+      "password": "2cool4school",
+      "firstName": "Jeff",
+      "lastName": "Winger",
+      "email": "winger.j@greendale.edu",
+      "dob": "1974-11-20",
+      "role": "FACULTY"
+    },
+    {
+      "_id": "122",
+      "username": "eco_girl",
+      "password": "brittadit",
+      "firstName": "Britta",
+      "lastName": "Perry",
+      "email": "perry.b@greendale.edu",
+      "dob": "1980-10-19",
+      "role": "STUDENT"
+    },
+    {
+      "_id": "123",
+      "username": "kick_puncher",
+      "password": "cougartown",
+      "firstName": "Abed",
+      "lastName": "Nadir",
+      "email": "nadir.a@greendale.edu",
+      "dob": "1990-03-24",
+      "role": "STUDENT"
+    },
+    {
+      "_id": "124",
+      "username": "footballer89",
+      "password": "password",
+      "firstName": "Troy",
+      "lastName": "Barnes",
+      "email": "barnes.t@greendale.edu",
+      "dob": "1989-12-24",
+      "role": "STUDENT"
+    },
+    {
+      "_id": "125",
+      "username": "annie_edison",
+      "password": "CorrectHorseBatteryStaple",
+      "firstName": "Annie",
+      "lastName": "Edison",
+      "email": "edison.a@greendale.edu",
+      "dob": "1990-12-19",
+      "role": "STUDENT"
+    },
+    {
+      "_id": "126",
+      "username": "momma_pie_1971",
+      "password": "JesusLovesYou",
+      "firstName": "Shirley",
+      "lastName": "Bennet",
+      "email": "bennet.s@greendale.edu",
+      "dob": "1971-08-12",
+      "role": "STUDENT"
+    },
+    {
+      "_id": "127",
+      "username": "magnitude",
+      "password": "pop_pop",
+      "firstName": "Magnitude",
+      "lastName": "One-Man Party",
+      "email": "magnitude@greendale.edu",
+      "dob": "1990-09-22",
+      "role": "STUDENT"
+    },
+    {
+      "_id": "128",
+      "username": "dalmatian69",
+      "password": "wingerluv",
+      "firstName": "Craig",
+      "lastName": "Pelton",
+      "email": "pelton.c@greendale.edu",
+      "dob": "1974-03-01",
+      "role": "FACULTY"
+    },
+    {
+      "_id": "129",
+      "username": "elroy_is_king",
+      "password": "keithDavid",
+      "firstName": "Elroy",
+      "lastName": "Petashnik",
+      "email": "petashnik.e@greendale.edu",
+      "dob": "1955-07-15",
+      "role": "FACULTY"
+    }
+  ]
