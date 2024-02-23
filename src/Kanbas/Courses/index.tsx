@@ -1,6 +1,5 @@
 import courses from "../../Kanbas/Database/courses.json";
 import { useParams, Navigate, Route, Routes, } from "react-router-dom";
-import { HiMiniBars3 } from "react-icons/hi2";
 import Modules from "./Modules";
 import CourseNavigation from "./Navigation";
 import Breadcrumbs from "./Breadcrumbs";
@@ -13,18 +12,16 @@ import "./index.css";
 function Courses() {
   return (
     <div>
-      <div className="row text-danger wd-breadbox h3">
-        <span className="col-1 pr-0">
-          <span className="float-end pr-0"><HiMiniBars3 /></span>
-        </span>
-        <span className="col-11">
+      
+      <div className="text-danger wd-breadbox h3 px-3">
           <Breadcrumbs />
-        </span>
       </div>
+      
+      <hr className="m-0" />
       <CourseNavigation />
       <div>
         <div
-          className="overflow-y-scroll position-fixed bottom-0 end-0"
+          className="overflow-y-scroll position-fixed bottom-0 end-0 p-4"
           style={{ left: "320px", top: "50px" }} >
           <Routes>
             <Route path="/" element={<Navigate to="Home" />} />

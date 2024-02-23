@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import { HiMiniBars3 } from "react-icons/hi2";
 
 function Breadcrumbs() {
     const location = useLocation();
@@ -19,9 +20,9 @@ function Breadcrumbs() {
     return (
         <>
             <ol className="breadcrumb">
+                <li><HiMiniBars3 /></li>
                 {crumbs}
             </ol>
-            <hr />
         </>
     );
 }
