@@ -53,25 +53,23 @@ function Grades() {
         </div>
       </div>
 
-      <div className="table-responsive">
+      <div className="table-responsive border border-black border-2">
         <table className="table">
           <thead>
-            <th>Student Name</th>
-            {as.map((assignment) => (<th>{assignment.title}</th>))}
+            <th className="border border-black">Student Name</th>
+            {as.map((assignment) => (<th className="border border-black">{assignment.title}</th>))}
           </thead>
           <tbody>
-            {es.map((enrollment) => {
+            {es.map((enrollment, index) => {
+              const rowClassName = index % 2 === 0? "table-secondary" : "table-white"
               const user = users.find((user) => user._id === enrollment.user);
               return (
-                <tr>
-                   <td>{user?.firstName} {user?.lastName}</td>
+                <tr className={rowClassName}>
+                   <td className="border border-black">{user?.firstName} {user?.lastName}</td>
                    {as.map((assignment) => {
                       const grade = grades.find(
                       (grade) => grade.student === enrollment.user && grade.assignment === assignment._id);
-                      
-
-
-                      return (<td>{grade?.grade || 0}</td>);})}
+                      return (<td className="border border-black">{grade?.grade || 0}</td>);})}
                       
                 </tr>);
             })}

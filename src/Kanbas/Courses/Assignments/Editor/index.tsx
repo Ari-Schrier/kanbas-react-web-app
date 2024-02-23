@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
+import { FaCheckCircle, FaEllipsisV} from "react-icons/fa";
 import assignments from "../../../Database/assignments.json";
 function AssignmentEditor() {
   const { assignmentId } = useParams();
@@ -13,7 +14,12 @@ function AssignmentEditor() {
   };
   return (
     <div>
-      <h2>Assignment Name</h2>
+      <div>
+        <span className="float-end text-success">Published <FaCheckCircle /><button type="button" className="btn btn-light border mx-2"><FaEllipsisV /></button></span>
+        <br /><br />
+        <hr />
+      </div>
+      <h4>Assignment Name</h4>
       <input value={assignment?.title}
              className="form-control mb-2" />
       <button onClick={handleSave} className="btn btn-success ms-2 float-end">
