@@ -16,6 +16,18 @@ function Dashboard() {
   const deleteCourse = (courseId: string) => {
     setCourses(courses.filter((course) => course._id !== courseId));
   };
+  const updateCourse = () => {
+    setCourses(
+      courses.map((c) => {
+        if (c._id === draftCourse._id) {
+          return draftCourse;
+        } else {
+          return c;
+        }
+      })
+    );
+  };
+
 
 
   return (
@@ -74,9 +86,16 @@ function Dashboard() {
         </div>
       </div>
       <div className="row">
-      <button onClick={addNewCourse} className="btn btn-success" >
+        <div className="col-6">
+      <button onClick={addNewCourse} className="btn btn-success w-100" >
         Add
       </button>
+        </div>
+        <div className="col-6">
+      <button onClick={updateCourse} className="btn btn-secondary w-100" >
+        Update
+      </button>
+      </div>
       </div>
       <h2>Published Courses (12)</h2> <hr />
       <div className="row">
@@ -102,8 +121,13 @@ function Dashboard() {
                       }} className="btn btn-danger float-end">
                       Delete
                     </button>
-                    <Link to={`/Kanbas/Courses/${course._id}/Home`} className="btn btn-success float-end">
-                    Edit </Link>
+                    <button onClick={(event) => {
+                      event.preventDefault();
+                      updateNewCourse(course);
+                    }} className="btn btn-success float-end">
+              Edit
+            </button>
+
                   </div>
                 </div>
               </div>
