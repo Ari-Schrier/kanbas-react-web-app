@@ -1,35 +1,12 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import  courseDB  from "../Database/courses.json";
-function Dashboard() {
-  const [courses, setCourses] = useState(courseDB);
-  const [draftCourse, updateNewCourse] = useState({
-    _id: "0", name: "New Course", number: "New Number",
-    startDate: "2023-09-10", endDate: "2023-12-15",
-    image: "/images/reactjs.jpg"
-  });
-  const addNewCourse = () => {
-    const newCourse = { ...draftCourse,
-                        _id: new Date().getTime().toString() };
-    setCourses([...courses, { ...draftCourse, ...newCourse }]);
-  };
-  const deleteCourse = (courseId: string) => {
-    setCourses(courses.filter((course) => course._id !== courseId));
-  };
-  const updateCourse = () => {
-    setCourses(
-      courses.map((c) => {
-        if (c._id === draftCourse._id) {
-          return draftCourse;
-        } else {
-          return c;
-        }
-      })
-    );
-  };
-
-
-
+function Dashboard(
+  { courses, course, setCourse, addNewCourse,
+    deleteCourse, updateCourse }: {
+    courses: any[]; course: any; setCourse: (course: any) => void;
+    addNewCourse: () => void; deleteCourse: (course: any) => void;
+    updateCourse: () => void; }) {
   return (
     <div className="p-4">
       <h1>Dashboard</h1>              <hr />
@@ -40,8 +17,8 @@ function Dashboard() {
           <input
             id="courseNameEntry"
             className="form-control"
-            value={draftCourse.name}
-            onChange={(e) => updateNewCourse({...draftCourse, name:e.target.value})}
+            value={course.name}
+            onChange={(e) => setCourse({...course, name:e.target.value})}
           />
         </div>
         <div className="col-6">
@@ -49,8 +26,8 @@ function Dashboard() {
           <input
             id="courseNumEntry"
             className="form-control"
-            value={draftCourse.number}
-            onChange={(e) => updateNewCourse({...draftCourse, number:e.target.value})}
+            value={course.number}
+            onChange={(e) => setCourse({...course, number:e.target.value})}
           />
         </div>
       </div>
@@ -60,8 +37,8 @@ function Dashboard() {
           <input
             id="courseImgEntry"
             className="form-control"
-            value={draftCourse.image}
-            onChange={(e) => updateNewCourse({...draftCourse, image:e.target.value})}
+            value={course.image}
+            onChange={(e) => setCourse({...course, image:e.target.value})}
           />
         </div>
         <div className="col-3">
@@ -70,8 +47,8 @@ function Dashboard() {
             id="courseSDentry"
             className="form-control"
             type="date"
-            value={draftCourse.startDate}
-            onChange={(e) => updateNewCourse({...draftCourse, startDate:e.target.value})}
+            value={course.startDate}
+            onChange={(e) => setCourse({...course, startDate:e.target.value})}
           />
         </div>
         <div className="col-3">
@@ -80,8 +57,8 @@ function Dashboard() {
             id="courseEDentry"
             className="form-control"
             type="date"
-            value={draftCourse.endDate}
-            onChange={(e) => updateNewCourse({...draftCourse, endDate:e.target.value})}
+            value={course.endDate}
+            onChange={(e) => setCourse({...course, endDate:e.target.value})}
           />
         </div>
       </div>
@@ -123,7 +100,7 @@ function Dashboard() {
                     </button>
                     <button onClick={(event) => {
                       event.preventDefault();
-                      updateNewCourse(course);
+                      setCourse(course);
                     }} className="btn btn-success float-end">
               Edit
             </button>
