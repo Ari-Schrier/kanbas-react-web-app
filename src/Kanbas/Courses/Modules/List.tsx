@@ -1,38 +1,22 @@
 import React, { useState } from "react";
 import "./index.css";
-import modules from "../../Database/modules.json";
 import { FaEllipsisV, FaCheckCircle, FaPlusCircle, FaPlus } from "react-icons/fa";
 import { useParams } from "react-router";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addModule,
+  deleteModule,
+  updateModule,
+  setModule,
+} from "./reducer";
+import { KanbasState } from "../../Store";
 function ModuleList() {
   const { courseId } = useParams();
-  const [modulesList, setModuleList] = useState<any[]>(modules);
-  const [module, setModule] = useState({
-    name: "New Module",
-    description: "New Description",
-    course: courseId,
-  });
-  const addModule = (module: any) => {
-    const newModule = { ...module,
-      _id: new Date().getTime().toString() };
-    const newModuleList = [newModule, ...modulesList];
-    setModuleList(newModuleList);
-  };
-  const deleteModule = (moduleId: string) => {
-    const newModuleList = modulesList.filter(
-      (module) => module._id !== moduleId );
-    setModuleList(newModuleList);
-  };
-  const updateModule = () => {
-    const newModuleList = modulesList.map((m) => {
-      if (m._id === module._id) {
-        return module;
-      } else {
-        return m;
-      }
-    });
-    setModuleList(newModuleList);
-  };
-
+  const moduleList = useSelector((state: KanbasState) => 
+    state.modulesReducer.modules);
+  const module = useSelector((state: KanbasState) => 
+    state.modulesReducer.module);
+  const dispatch = useDispatch();
   return (
     <>
       <div>
@@ -52,28 +36,24 @@ function ModuleList() {
         <label htmlFor="wd-module-name">Name of New Module:</label><br />
         <input value={module.name}
           id="wd-module-name"
-          onChange={(e) => setModule({
-            ...module, name: e.target.value })}
-        />
+          onChange={(e) =>dispatch(setModule({ ...module, name: e.target.value }))}/>
         </span>
         </div>
         <div className="col-6">
         <label htmlFor="wd-module-description">New Module Description:</label><br />
         <textarea value={module.description}
           id="wd-module-description"
-          onChange={(e) => setModule({
-            ...module, description: e.target.value })}
-        />
+          onChange={(e) =>dispatch(setModule({ ...module, description: e.target.value }))}/>
         </div>
-        <button className="btn btn-success" onClick={() => { addModule(module) }}>Add</button>
-        <button className="btn btn-secondary" onClick={updateModule}>
+        <button className="btn btn-success" onClick={() => dispatch(addModule({ ...module, course: courseId }))}>Add</button>
+        <button className="btn btn-secondary" onClick={() => dispatch(updateModule(module))}>
                 Update
         </button>
         </div>
 
       </li>
 
-        {modulesList.filter((module) => module.course === courseId)
+        {moduleList.filter((module:any) => module.course === courseId)
         .map((module) => (
           <li
             className="list-group-item">
@@ -83,11 +63,11 @@ function ModuleList() {
               {module.name}
               <span className="float-end">
                 <button className="btn btn-danger btn-small"
-                onClick={() => deleteModule(module._id)}>
+                onClick={() => dispatch(deleteModule(module._id))}>
                 Delete
               </button>
               <button className="btn btn-secondary btn-small"
-                onClick={(event) => { setModule(module); }}>
+                onClick={() => dispatch(setModule(module))}>
                 Edit
               </button>
 
