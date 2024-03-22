@@ -1,11 +1,19 @@
-import React from "react";
-import { FaCheckCircle, FaEllipsisV, FaPlusCircle } from "react-icons/fa";
+import { FaCheckCircle, FaEllipsisV, FaPlusCircle, FaTrash } from "react-icons/fa";
 import { Link, useParams } from "react-router-dom";
-import assignments from "../../Database/assignments.json";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  deleteAssignment,
+  setAssignment,
+  setDefaultAssignment,
+} from "./assignmentsReducer";
+import { KanbasState } from "../../Store";
 function Assignments() {
   const { courseId } = useParams();
+  const assignments = useSelector((state:KanbasState)=>state.assignmentsReducer.assignments);
+  const assignment = useSelector((state:KanbasState)=>state.assignmentsReducer.assignment);
   const assignmentList = assignments.filter(
     (assignment) => assignment.course === courseId);
+  const dispatch = useDispatch();
   return (
     <>
 
@@ -29,17 +37,20 @@ function Assignments() {
             <FaEllipsisV className="me-2" /> ASSIGNMENTS
             <span className="float-end">
               <FaCheckCircle className="text-success" />
-              <FaPlusCircle className="ms-2" /><FaEllipsisV className="ms-2" />
+              <Link onClick={() => dispatch(setDefaultAssignment())} to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}><FaPlusCircle className="ms-2" /></Link>
+              <FaEllipsisV className="ms-2" />
             </span>
           </div>
           <ul className="list-group">
             {assignmentList.map((assignment) => (
               <li className="list-group-item rounded-0 bg-white wd-assignment-border py-4">
                 <FaEllipsisV className="me-2" />
-                <Link className = "link-dark text-decoration-none font-weight-bold"
+                <Link className = "link-dark text-decoration-none font-weight-bold" onClick={()=> dispatch(setAssignment(assignment))}
                    to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}>{assignment.title}</Link>
                 <span className="float-end">
-                  <FaCheckCircle className="text-success" /><FaEllipsisV className="ms-2" /></span>
+                  <FaTrash className="text-danger" onClick={()=>dispatch(deleteAssignment(assignment._id))} />
+                  <FaCheckCircle className="text-success" />
+                  <FaEllipsisV className="ms-2" /></span>
               </li>))}
           </ul>
         </li>
