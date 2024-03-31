@@ -2,12 +2,15 @@ import "./index.css";
 import { FaEllipsisV, FaCheckCircle, FaPlusCircle, FaPlus } from "react-icons/fa";
 import { useParams } from "react-router";
 import { useSelector, useDispatch } from "react-redux";
+import React, { useEffect, useState } from "react";
 import {
   addModule,
   deleteModule,
   updateModule,
+  setModules,
   setModule,
 } from "./reducer";
+import { findModulesForCourse, createModule  } from "./client";
 import { KanbasState } from "../../Store";
 function ModuleList() {
   const { courseId } = useParams();
@@ -16,6 +19,21 @@ function ModuleList() {
   const module = useSelector((state: KanbasState) => 
     state.modulesReducer.module);
   const dispatch = useDispatch();
+
+  const handleAddModule = () => {
+    createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+
+
+  useEffect(() => {
+    findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );
+  }, [courseId]);
+
   return (
     <>
       <div>
@@ -44,7 +62,7 @@ function ModuleList() {
           id="wd-module-description"
           onChange={(e) =>dispatch(setModule({ ...module, description: e.target.value }))}/>
         </div>
-        <button className="btn btn-success" onClick={() => dispatch(addModule({ ...module, course: courseId }))}>Add</button>
+        <button className="btn btn-success" onClick={handleAddModule}>Add</button>
         <button className="btn btn-secondary" onClick={() => dispatch(updateModule(module))}>
                 Update
         </button>
