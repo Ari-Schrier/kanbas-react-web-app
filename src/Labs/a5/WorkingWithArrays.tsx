@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 function WorkingWithArrays() {
+    const [errorMessage, setErrorMessage] = useState(null);
     const API = "http://localhost:4000/a5/todos";
     const [todo, setTodo] = useState({
         id: 1,
@@ -36,6 +37,27 @@ function WorkingWithArrays() {
         const response = await axios.get(`${API}/${todo.id}/title/${todo.title}`);
         setTodos(response.data);
       };
+      const deleteTodo = async (todo:any) => {
+        try {
+          const response = await axios.delete(`${API}/${todo.id}`);
+          setTodos(todos.filter((t) => t.id !== todo.id));
+        } catch (error:any) {
+          console.log(error);
+          setErrorMessage(error.response.data.message);
+        }    
+      };
+      const updateTodo = async () => {
+        try{
+          const response = await axios.put(`${API}/${todo.id}`, todo);
+          setTodos(todos.map((t) => (t.id === todo.id ? todo : t)));
+        } catch (error:any) {
+          console.log(error);
+          setErrorMessage(error.response.data.message);
+        }
+    
+      };
+    
+    
     
   useEffect(() => {
     fetchTodos();
@@ -97,6 +119,11 @@ function WorkingWithArrays() {
             Delete Todo with ID = {todo.id}
         </a>
         <br />
+        {errorMessage && (
+        <div className="alert alert-danger mb-2 mt-2">
+          {errorMessage}
+        </div>
+      )}
         <div>
           <input type="text" value={todo.id}/>
           <input type="text" value={todo.title}
@@ -118,8 +145,8 @@ function WorkingWithArrays() {
           <button onClick={createTodo} className="btn btn-primary">
             Create Todo
           </button>
-          <button onClick={updateTitle} className="btn btn-success">
-            Update Title
+          <button onClick={updateTodo}>
+            Update Todo
           </button>
         </div>
         <ul className="list-group">
@@ -134,8 +161,9 @@ function WorkingWithArrays() {
             <button onClick={() => fetchTodoById(todo.id)} className="btn btn-warning float-end">
               Edit
             </button>
-            <button onClick={() => removeTodo(todo.id)} className="btn btn-danger float-end">
-              Remove
+            <button onClick={() => deleteTodo(todo)}
+              className="btn btn-danger float-end ms-2">
+              Delete
             </button>
           </li>
         ))}
