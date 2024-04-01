@@ -6,11 +6,24 @@ import {
   updateAssignment,
   setAssignment,
   } from "../assignmentsReducer";
+import { createAssignment, updateAssignmentAsync } from "../service";
 import { KanbasState } from "../../../Store";
 function AssignmentEditor() {
   const { courseId } = useParams();
   const dispatch = useDispatch();
   const assignment = useSelector((state:KanbasState)=>state.assignmentsReducer.assignment);
+
+  const handleAddAssignment = () => {
+    createAssignment(courseId, assignment).then((assignment) => {
+      dispatch(addAssignment(assignment));
+    });
+  };
+
+  const handleUpdateAssignment = async () => {
+    const status = await updateAssignmentAsync(assignment);
+    dispatch(updateAssignment(module));
+  }
+
 
   return (
     <div>
@@ -77,7 +90,8 @@ function AssignmentEditor() {
 
       <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
             className="btn btn-success ms-2 float-end"
-            onClick={assignment.course!=courseId? ()=>dispatch(addAssignment({...assignment, course:courseId})):()=>dispatch(updateAssignment(assignment))}>
+            onClick={assignment.course!==courseId? handleAddAssignment : handleUpdateAssignment}
+            >
         Save
       </Link>
       <Link to={`/Kanbas/Courses/${courseId}/Assignments`}

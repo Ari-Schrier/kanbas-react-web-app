@@ -1,19 +1,38 @@
 import { FaCheckCircle, FaEllipsisV, FaPlusCircle, FaTrash } from "react-icons/fa";
 import { Link, useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
 import {
+  setAssignments,
   deleteAssignment,
   setAssignment,
   setDefaultAssignment,
 } from "./assignmentsReducer";
+import { findAssignmentsForCourse, deleteAssignmentAsync } from "./service";
 import { KanbasState } from "../../Store";
 function Assignments() {
   const { courseId } = useParams();
+  useEffect(() => {
+    findAssignmentsForCourse(courseId)
+      .then((assignment) =>
+        dispatch(setAssignments(assignment))
+    );
+  }, [courseId]);
   const assignments = useSelector((state:KanbasState)=>state.assignmentsReducer.assignments);
   const assignment = useSelector((state:KanbasState)=>state.assignmentsReducer.assignment);
   const assignmentList = assignments.filter(
     (assignment) => assignment.course === courseId);
   const dispatch = useDispatch();
+
+  const handleDeleteAssignment = (AssignmentId: string) => {
+    if (window.confirm("Are you sure you want to do that, Dave?")===true){
+      deleteAssignmentAsync(AssignmentId).then((status) => {
+        dispatch(deleteAssignment(AssignmentId));
+      });
+    }
+  };
+
+
   return (
     <>
 
@@ -45,10 +64,10 @@ function Assignments() {
             {assignmentList.map((assignment) => (
               <li className="list-group-item rounded-0 bg-white wd-assignment-border py-4">
                 <FaEllipsisV className="me-2" />
-                <Link className = "link-dark text-decoration-none font-weight-bold" onClick={()=> dispatch(setAssignment(assignment))}
+                               <Link className = "link-dark text-decoration-none font-weight-bold" onClick={()=> dispatch(setAssignment(assignment))}
                    to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}>{assignment.title}</Link>
                 <span className="float-end">
-                  <FaTrash className="text-danger" onClick={()=>dispatch(deleteAssignment(assignment._id))} />
+                  <FaTrash className="text-danger" onClick={() => handleDeleteAssignment(assignment._id)} />
                   <FaCheckCircle className="text-success" />
                   <FaEllipsisV className="ms-2" /></span>
               </li>))}

@@ -10,7 +10,7 @@ import {
   setModules,
   setModule,
 } from "./reducer";
-import { findModulesForCourse, createModule  } from "./client";
+import * as client from "./client";
 import { KanbasState } from "../../Store";
 function ModuleList() {
   const { courseId } = useParams();
@@ -21,14 +21,24 @@ function ModuleList() {
   const dispatch = useDispatch();
 
   const handleAddModule = () => {
-    createModule(courseId, module).then((module) => {
+    client.createModule(courseId, module).then((module) => {
       dispatch(addModule(module));
     });
   };
 
+  const handleDeleteModule = (moduleId: string) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
 
   useEffect(() => {
-    findModulesForCourse(courseId)
+    client.findModulesForCourse(courseId)
       .then((modules) =>
         dispatch(setModules(modules))
     );
@@ -63,7 +73,7 @@ function ModuleList() {
           onChange={(e) =>dispatch(setModule({ ...module, description: e.target.value }))}/>
         </div>
         <button className="btn btn-success" onClick={handleAddModule}>Add</button>
-        <button className="btn btn-secondary" onClick={() => dispatch(updateModule(module))}>
+        <button className="btn btn-secondary" onClick={handleUpdateModule}>
                 Update
         </button>
         </div>
@@ -80,7 +90,7 @@ function ModuleList() {
               {module.name}
               <span className="float-end">
                 <button className="btn btn-danger btn-small"
-                onClick={() => dispatch(deleteModule(module._id))}>
+                onClick={() => handleDeleteModule(module._id)}>
                 Delete
               </button>
               <button className="btn btn-secondary btn-small"
