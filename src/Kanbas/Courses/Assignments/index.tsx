@@ -14,14 +14,13 @@ function Assignments() {
   const { courseId } = useParams();
   useEffect(() => {
     findAssignmentsForCourse(courseId)
-      .then((assignment) =>
-        dispatch(setAssignments(assignment))
+      .then((x) =>
+        dispatch(setAssignments(x))
     );
   }, [courseId]);
-  const assignments = useSelector((state:KanbasState)=>state.assignmentsReducer.assignments);
+  const assignmentList = useSelector((state:KanbasState)=>state.assignmentsReducer.assignments);
+  console.log(assignmentList);
   const assignment = useSelector((state:KanbasState)=>state.assignmentsReducer.assignment);
-  const assignmentList = assignments.filter(
-    (assignment) => assignment.course === courseId);
   const dispatch = useDispatch();
 
   const handleDeleteAssignment = (AssignmentId: string) => {

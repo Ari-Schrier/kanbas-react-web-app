@@ -5,23 +5,33 @@ import {
   addAssignment,
   updateAssignment,
   setAssignment,
+  setAssignments,
   } from "../assignmentsReducer";
-import { createAssignment, updateAssignmentAsync } from "../service";
+import { createAssignment, updateAssignmentAsync, findAssignmentsForCourse } from "../service";
 import { KanbasState } from "../../../Store";
 function AssignmentEditor() {
   const { courseId } = useParams();
   const dispatch = useDispatch();
   const assignment = useSelector((state:KanbasState)=>state.assignmentsReducer.assignment);
 
-  const handleAddAssignment = () => {
-    createAssignment(courseId, assignment).then((assignment) => {
-      dispatch(addAssignment(assignment));
-    });
+  const updateAssignmentList = async () => {
+    findAssignmentsForCourse(courseId)
+      .then((assignment) =>
+      dispatch(setAssignments(assignment))
+  //       //console.log("test")
+      );
+    }
+
+  const handleAddAssignment = async () => {
+    const status = await createAssignment(courseId, assignment);
+    dispatch(addAssignment(assignment));
+      // updateAssignmentList();
   };
 
   const handleUpdateAssignment = async () => {
     const status = await updateAssignmentAsync(assignment);
-    dispatch(updateAssignment(module));
+    dispatch(updateAssignment(assignment));
+    // updateAssignmentList();
   }
 
 
