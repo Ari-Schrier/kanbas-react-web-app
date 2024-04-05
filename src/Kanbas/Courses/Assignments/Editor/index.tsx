@@ -16,17 +16,18 @@ function AssignmentEditor() {
 
   const updateAssignmentList = async () => {
     findAssignmentsForCourse(courseId)
-      .then((assignment) =>
-      dispatch(setAssignments(assignment))
-  //       //console.log("test")
-      );
-    }
+    .then((assignment) =>
+         dispatch(setAssignments(assignment))
+         //console.log("test")
+         );
+   }
 
-  const handleAddAssignment = async () => {
-    const status = await createAssignment(courseId, assignment);
-    dispatch(addAssignment(assignment));
-      // updateAssignmentList();
+   const handleAddAssignment = () => {
+    createAssignment(courseId, assignment).then(() => {
+      dispatch(addAssignment({...assignment, course:courseId}));
+    });
   };
+  
 
   const handleUpdateAssignment = async () => {
     const status = await updateAssignmentAsync(assignment);
@@ -100,7 +101,8 @@ function AssignmentEditor() {
 
       <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
             className="btn btn-success ms-2 float-end"
-            onClick={assignment.course!==courseId? handleAddAssignment : handleUpdateAssignment}
+            onClick={assignment.course==="NULL"? handleAddAssignment : handleUpdateAssignment}
+            //onClick={handleAddAssignment}
             >
         Save
       </Link>

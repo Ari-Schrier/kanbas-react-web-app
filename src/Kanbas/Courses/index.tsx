@@ -12,17 +12,16 @@ import axios from "axios";
 
 function Courses() {
   const { courseId } = useParams();
-  const COURSES_API = "https://kanbas-node-server-app-dvdv.onrender.com/api/courses";
+  const API_BASE = process.env.REACT_APP_API_BASE;
+  const COURSES_API = `${API_BASE}/api/courses`;
   const [course, setCourse] = useState();
   const findCourseById = async (courseId?: string) => {
     const response = await axios.get(
       `${COURSES_API}/${courseId}`
     );
-    console.log(response.data);
     setCourse(response.data);
   };
   useEffect(() => {
-    console.log(courseId);
     findCourseById(courseId);
   }, [courseId]);
 

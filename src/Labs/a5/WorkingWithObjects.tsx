@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 function WorkingWithObjects() {
+    const API_BASE = process.env.REACT_APP_API_BASE;
     const [assignment, setAssignment] = useState({
         id: 1, title: "NodeJS Assignment",
         description: "Create a NodeJS server with ExpressJS",
@@ -12,8 +13,8 @@ function WorkingWithObjects() {
         description:"In this module we learn everything there is to know about bathwater",
         course:"Liquids Throughout the Years"
     })
-      const ASSIGNMENT_URL = "http://localhost:4000/a5/assignment"
-      const MODULE_URL = "http://localhost:4000/a5/module"
+      const ASSIGNMENT_URL = `${API_BASE}/a5/assignment`
+      const MODULE_URL = `${API_BASE}/a5/module`
 
       const fetchAssignment = async () => {
         const response = await axios.get(`${ASSIGNMENT_URL}`);
@@ -42,10 +43,10 @@ function WorkingWithObjects() {
         Fetch Assignment
       </button>
       <h4>Module Stuff</h4>
-      <a className="btn btn-success" href="http://localhost:4000/a5/module">
+      <a className="btn btn-success" href={MODULE_URL} >
         Get Module
       </a>
-      <a className="btn btn-secondary" href="http://localhost:4000/a5/module/name">
+      <a className="btn btn-secondary" href={`${MODULE_URL}/name`}>
         Get Name
       </a>
       <a href={`${MODULE_URL}/name/${module.name}`}>
@@ -81,11 +82,11 @@ function WorkingWithObjects() {
         checked={assignment.completed}/>
 
       <h4>Retrieving Objects</h4>
-      <a className="btn btn-success" href="http://localhost:4000/a5/assignment">
+      <a className="btn btn-success" href={ASSIGNMENT_URL}>
         Get Assignment
       </a>
       <h4>Retrieving Properties</h4>
-      <a className="btn btn-secondary" href="http://localhost:4000/a5/assignment/title">
+      <a className="btn btn-secondary" href={`${ASSIGNMENT_URL}/title`}>
         Get Title
       </a>
     </div>
