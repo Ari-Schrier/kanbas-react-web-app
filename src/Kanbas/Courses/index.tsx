@@ -27,7 +27,6 @@ function Courses() {
 
   return (
     <div>
-      
       <div className="text-danger wd-breadbox h3 px-3">
           <Breadcrumbs />
       </div>
