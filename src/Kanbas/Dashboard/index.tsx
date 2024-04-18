@@ -7,7 +7,7 @@ function Dashboard(
     courses: any[]; course: any; setCourse: (course: any) => void;
     addNewCourse: () => void; deleteCourse: (course: any) => void;
     updateCourse: () => void; }) {
-  return (
+      return (
     <div className="p-4">
       <h1>Dashboard</h1>              <hr />
       <h2>Course Constructor</h2> <hr />

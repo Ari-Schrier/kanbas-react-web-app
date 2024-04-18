@@ -19,7 +19,7 @@ function Kanbas() {
     setCourses(response.data);
   };
   useEffect(() => {
-    findAllCourses();
+    findAllCourses();    
   }, []);
   const [course, setCourse] = useState({
     _id: "1234", name: "New Course", number: "New Number",

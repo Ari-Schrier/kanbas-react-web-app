@@ -8,6 +8,11 @@ const request = axios.create({
 
 export interface User { _id: string; username: string; password: string; role: string;
 firstName: string, lastName: string };
+
+const request = axios.create({
+  withCredentials: true
+});
+
 export const signin = async (credentials: User) => {
   const response = await request.post( `${USERS_API}/signin`, credentials );
   return response.data;
@@ -38,8 +43,7 @@ export const findUserById = async (id: string) => {
     return response.data;
 };
 export const findUsersByRole = async (role: string) => {
-    const response = await
-      request.get(`${USERS_API}?role=${role}`);
+    const response = await request.get(`${USERS_API}?role=${role}`);
     return response.data;
   };
   export const signup = async (user:any) => {
