@@ -1,6 +1,11 @@
 import axios from "axios";
 export const BASE_API = process.env.REACT_APP_API_BASE;
 export const USERS_API = `${BASE_API}/api/users`;
+
+const request = axios.create({
+  withCredentials: true
+});
+
 export interface User { _id: string; username: string; password: string; role: string;
 firstName: string, lastName: string };
 
@@ -38,8 +43,7 @@ export const findUserById = async (id: string) => {
     return response.data;
 };
 export const findUsersByRole = async (role: string) => {
-    const response = await
-    request.get(`${USERS_API}?role=${role}`);
+    const response = await request.get(`${USERS_API}?role=${role}`);
     return response.data;
   };
   export const signup = async (user:any) => {
